@@ -30,7 +30,6 @@
             "scripts": [
                 "./node_modules/bootstrap/dist/js/bootstrap.min.js",
                 "./node_modules/jquery/dist/jquery.min.js",
-                "./node_modules/popperjs/dist/popper.min.js"
             ]
           },
           "configurations": {
@@ -92,7 +91,6 @@
             "scripts": [
                 "./node_modules/bootstrap/dist/js/bootstrap.min.js",
                 "./node_modules/jquery/dist/jquery.min.js",
-                "./node_modules/popperjs/dist/popper.min.js"
             ],
             "assets": [
               "src/favicon.ico",

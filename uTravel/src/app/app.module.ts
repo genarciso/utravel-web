@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
 import {BsDropdownModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
+import { PaginaCarregarComponent } from './pagina-inicial/pagina-carregar/pagina-carregar.component';
+import { VideoComponent } from './pagina-inicial/video/video.component';
+import { MenuInicialComponent } from './pagina-inicial/menu-inicial/menu-inicial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaInicialComponent
+    PaginaInicialComponent,
+    PaginaCarregarComponent,
+    VideoComponent,
+    MenuInicialComponent
   ],
   imports: [
       BrowserModule,
