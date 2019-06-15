@@ -9,6 +9,9 @@ import {BsDropdownModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
 import { PaginaCarregarComponent } from './pagina-inicial/pagina-carregar/pagina-carregar.component';
 import { VideoComponent } from './pagina-inicial/video/video.component';
 import { MenuInicialComponent } from './pagina-inicial/menu-inicial/menu-inicial.component';
+import { ViagensComponent } from './pagina-inicial/viagens/viagens.component';
+import { ServicosComponent } from './pagina-inicial/servicos/servicos.component';
+import { LoginComponent } from './pagina-inicial/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MenuInicialComponent } from './pagina-inicial/menu-inicial/menu-inicial
     PaginaInicialComponent,
     PaginaCarregarComponent,
     VideoComponent,
-    MenuInicialComponent
+    MenuInicialComponent,
+    ViagensComponent,
+    ServicosComponent,
+    LoginComponent
   ],
   imports: [
       BrowserModule,

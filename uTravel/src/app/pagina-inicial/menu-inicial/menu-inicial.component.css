@@ -17,7 +17,7 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .5rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -59,7 +59,7 @@
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  #mainNav.navbar-shrink {
     color: #161616;
   }
   #mainNav.navbar-shrink .nav-link {
@@ -78,4 +78,13 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+}
+
+#imagemLogo {
+    width: 5%;
+    height: auto;
+}
+
+#logo {
+    color: #64a19d;
 }

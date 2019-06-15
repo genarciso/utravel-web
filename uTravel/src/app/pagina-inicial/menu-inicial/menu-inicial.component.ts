@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-menu-inicial',
   templateUrl: './menu-inicial.component.html',
@@ -12,4 +14,7 @@ export class MenuInicialComponent implements OnInit {
   ngOnInit() {
   }
 
+  criar() {
+
+  }
 }
