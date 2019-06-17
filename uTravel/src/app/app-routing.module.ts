@@ -7,7 +7,7 @@ const routes: Routes = [
         path: '',
         component: PaginaInicialComponent
     },
-    {
+    /*{
         path: 'dashboard',
         component: PaginaCentralComponent,
         data: {
@@ -47,7 +47,7 @@ const routes: Routes = [
                 loadChildren: () => import('./views/widgets/widgets.module').then(m => m.WidgetsModule)
             }
         ]
-    },
+    },*/
 
 ];
 
