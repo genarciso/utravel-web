@@ -1,3 +1,5 @@
+@import url('../../../assets/pagina_inicial/css/style.css');
+@import url('../../../assets/pagina_inicial/css/animate.css');
 #mainNav {
   min-height: 56px;
   background-color: #fff;

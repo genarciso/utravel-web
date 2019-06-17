@@ -1,3 +1,59 @@
-<p>
-  login works!
-</p>
+<ng-template #modalTemplate>
+    <div class="modal-header">
+        <h3 class="modal-title pull-left">Login</h3>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="fechar()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form [formGroup]="formulario" (ngSubmit)="confirmar()">
+        <div class="modal-body">
+            <p class="text-muted d-block font-weight-semibold">Entre com sua conta e a sua senha</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div>
+                <input name="usuario"
+                       id="usuario"
+                       [maxLength]="50"
+                       type="text"
+                       [ngClass]="(loginInvalido)? 'form-control is-invalid' : 'form-control'"
+                       [(ngModel)]="usuario"
+                       formControlName="usuario"
+                       placeholder="Usuário"
+                       required/>
+                <div *ngIf="loginInvalido" class="invalid-feedback">
+                    geral.campo_obrigatorio
+                </div>
+            </div>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-lock "></i></span>
+                </div>
+                <input name="senha"
+                       id="senha"
+                       [maxLength]="50"
+                       type="password"
+                       class="form-control"
+                       [(ngModel)]="senha"
+                       formControlName="senha"
+                       required
+                       placeholder="Senha"
+                />
+                <div *ngIf="senhaInvalida" class="invalid-feedback">
+                    geral.campo_obrigatorio
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-6 col-6 text-right">
+                    <button type="button" class="btn btn-link px-0 font-weight-semibold">Esqueceu sua senha?
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="confirmar()">Entrar</button>
+        <button type="button" class="btn btn-default" (click)="fechar()">Cancelar</button>
+    </div>
+</ng-template>

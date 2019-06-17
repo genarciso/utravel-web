@@ -16,14 +16,11 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#projects">Viagens</a>
                 </li>
-                <li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-				</li>
-
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#">Login</a>
+					<a class="nav-link js-scroll-trigger" (click)="abrirLogin()" href="#">Login</a>
 				</li>
 			</ul>
 		</div>
 	</div>
+    <app-login #modal></app-login>
 </nav>

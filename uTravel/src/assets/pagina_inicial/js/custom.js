@@ -82,7 +82,7 @@
         // Animation type (refer to Animate.css for a list of available animations)
         animation: "fadeInDown",
         // An array of words to rotate are created based on this separator. Change it if you wish to separate the words differently (e.g. So Simple | Very Doge | Much Wow | Such Cool)
-        separator: ",",
+        separator: "-",
         // The delay between each word in milliseconds
         speed: 3000
     });

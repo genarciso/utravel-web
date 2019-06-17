@@ -1,14 +1,5 @@
-/* ===========================
---- Intro - home video
-============================ */
-
-.morphext > span {
-	display: none;
-}
-
-.morphext > .animated {
-    display: inline-block;
-}
+@import url('../../../assets/pagina_inicial/css/animate.css');
+@import url('../../../assets/pagina_inicial/css/style.css');
 
 #intro.home-video {
 	position: relative;
@@ -115,7 +106,7 @@
 	height: 100%;
 	z-index: 2;
 	padding: 60px 0;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+
 }
 
 /* video icon */
@@ -144,5 +135,9 @@
 }
 
 #btn-scroll {
-	background-color: #ADD8E6;
+	background-color: #64a19d;
+}
+
+#js-rotating {
+    color: #64a19d;
 }
