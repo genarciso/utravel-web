@@ -1,75 +1,80 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {LOCALE_ID, NgModule} from '@angular/core';
-
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import {NgModule} from '@angular/core';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {PaginaInicialComponent} from './pagina-inicial/pagina-inicial.component';
-import {BsDropdownModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
-import {TabsModule} from 'ngx-bootstrap/tabs';
-import {PaginaCarregarComponent} from './pagina-inicial/pagina-carregar/pagina-carregar.component';
-import {VideoComponent} from './pagina-inicial/video/video.component';
-import {MenuInicialComponent} from './pagina-inicial/menu-inicial/menu-inicial.component';
-import {ViagensComponent} from './pagina-inicial/viagens/viagens.component';
-import {ServicosComponent} from './pagina-inicial/servicos/servicos.component';
-import {LoginComponent} from './pagina-inicial/login/login.component';
-import {ReactiveFormsModule} from '@angular/forms';
-import {CabecalhoComponent} from './pagina-central/cabecalho/cabecalho.component';
-import {RodapeComponent} from './pagina-central/rodape/rodape.component';
-import {DashboardComponent} from './pagina-central/dashboard/dashboard.component';
-import {PaginaCentralComponent} from './pagina-central/pagina-central.component';
-import {PerfectScrollbarConfigInterface, PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
+
+import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
+import {PERFECT_SCROLLBAR_CONFIG} from 'ngx-perfect-scrollbar';
+import {PerfectScrollbarConfigInterface} from 'ngx-perfect-scrollbar';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     suppressScrollX: true
 };
 
+import {AppComponent} from './app.component';
+
+// Import containers
+import {DefaultLayoutComponent} from './containers';
+
+import {P404Component} from './views/error/404.component';
+import {P500Component} from './views/error/500.component';
+import {LoginComponent} from './views/login/login.component';
+import {RegisterComponent} from './views/register/register.component';
+
+const APP_CONTAINERS = [
+    DefaultLayoutComponent
+];
+
 import {
     AppAsideModule,
+    AppBreadcrumbModule,
     AppHeaderModule,
     AppFooterModule,
     AppSidebarModule,
 } from '@coreui/angular';
-import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+
+// Import routing module
+import {AppRoutingModule} from './app.routing';
+
+// Import 3rd party components
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import {TabsModule} from 'ngx-bootstrap/tabs';
+import {ChartsModule} from 'ng2-charts';
+import {PaginaInicialModule} from "./containers/pagina-inicial/pagina-inicial.module";
+import { DashboardViagemComponent } from './containers/default-layout/dashboard-viagem/dashboard-viagem.component';
+import {ModalModule, ProgressbarModule} from "ngx-bootstrap";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        PaginaInicialComponent,
-        PaginaCarregarComponent,
-        VideoComponent,
-        MenuInicialComponent,
-        ViagensComponent,
-        ServicosComponent,
-        LoginComponent,
-        CabecalhoComponent,
-        RodapeComponent,
-        DashboardComponent,
-        PaginaCentralComponent
-    ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-        AppHeaderModule,
         BrowserAnimationsModule,
-        PerfectScrollbarModule,
-        ModalModule.forRoot(),
-        BsDropdownModule.forRoot(),
-        TooltipModule.forRoot(),
-        ReactiveFormsModule,
-        AppFooterModule,
+        AppRoutingModule,
         AppAsideModule,
-        TabsModule.forRoot(),
+        AppBreadcrumbModule.forRoot(),
+        AppFooterModule,
+        AppHeaderModule,
         AppSidebarModule,
-
+        PerfectScrollbarModule,
+        BsDropdownModule.forRoot(),
+        TabsModule.forRoot(),
+        ChartsModule,
+        PaginaInicialModule,
+        ProgressbarModule,
+        ModalModule
     ],
-    providers: [
-        {provide: LOCALE_ID, useValue: 'pt-BR'},
-        {
-            provide: LocationStrategy,
-            useClass: HashLocationStrategy
-        },
+    declarations: [
+        AppComponent,
+        ...APP_CONTAINERS,
+        P404Component,
+        P500Component,
+        LoginComponent,
+        RegisterComponent,
+        DashboardViagemComponent
     ],
+    providers: [{
+        provide: LocationStrategy,
+        useClass: HashLocationStrategy
+    }],
     bootstrap: [AppComponent]
 })
 export class AppModule {
