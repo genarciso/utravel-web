@@ -3,149 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2c336e25-79b6-4fed-aad3-7970c1f5c169" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/core/modelos/usuario.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/core/modelos/usuario.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/_nav.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/cabecalho/cabecalho.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/cabecalho/cabecalho.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/cabecalho/cabecalho.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/cabecalho/cabecalho.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/dashboard/dashboard.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/scrollspy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/dashboard/dashboard.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/pagina-central.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/pagina-central.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/pagina-central.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/pagina-central.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/rodape/rodape.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/rodape/rodape.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/rodape/rodape.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/rodape/rodape.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/base-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/base.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/cards.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/cards.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/carousels.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/carousels.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/collapses.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/collapses.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/forms.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/forms.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/paginations.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/paginations.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/popovers.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/popovers.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/progress.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/progress.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/switches.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/switches.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tables.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tables.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tabs.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tabs.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tooltips.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/base/tooltips.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/brand-buttons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/brand-buttons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/buttons-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/buttons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/buttons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/buttons.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/dropdowns.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/dropdowns.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/buttons/dropdowns.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/error/404.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/error/404.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/error/500.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/error/500.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/coreui-icons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/coreui-icons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/flags.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/flags.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/font-awesome.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/font-awesome.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/icons-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/icons.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/simple-line-icons.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/icons/simple-line-icons.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/alerts.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/alerts.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/badges.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/badges.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/modals.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/modals.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/notifications-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/notifications/notifications.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/colors.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/colors.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/theme-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/theme.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/typography.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/theme/typography.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/widgets/widgets-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/widgets/widgets.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/widgets/widgets.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-central/views/widgets/widgets.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/menu-inicial/menu-inicial.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/menu-inicial/menu-inicial.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/menu-inicial/menu-inicial.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/menu-inicial/menu-inicial.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-carregar/pagina-carregar.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-carregar/pagina-carregar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-carregar/pagina-carregar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-carregar/pagina-carregar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-inicial.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-inicial.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-inicial.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-inicial.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/servicos/servicos.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/servicos/servicos.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/servicos/servicos.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/servicos/servicos.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/viagens/viagens.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/viagens/viagens.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/viagens/viagens.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/viagens/viagens.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -167,10 +26,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="33" selection-start-line="33" selection-end-line="34" />
+            <state relative-caret-position="250">
+              <caret line="33" column="83" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="83" />
               <folding>
-                <element signature="e#2961#2967#0" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#cui-breadcrumb#0;n#main#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,11 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
-              <folding>
-                <element signature="e#2653#2660#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="71">
+              <caret line="87" column="70" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -196,11 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="75">
               <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -342,35 +195,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="utravelWeb" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="utravelWeb" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="utravelWeb" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="utravelWeb" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="uTravel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="utravelWeb" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="utravelWeb" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="uTravel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="utravelWeb" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="utravelWeb" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="uTravel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -412,16 +237,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="default-layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="utravelWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="utravelWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="uTravel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="default-layout" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-viagem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="utravelWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -528,18 +343,18 @@
       <workItem from="1560787246454" duration="5848000" />
       <workItem from="1560795361994" duration="3352000" />
       <workItem from="1560812025945" duration="4256000" />
-      <workItem from="1560816407081" duration="11354000" />
+      <workItem from="1560816407081" duration="11536000" />
+      <workItem from="1560874664054" duration="2896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80856000" />
+    <option name="totallyTimeSpent" value="83934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1366" height="733" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948718" visible="true" weight="0.2590909" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948718" visible="true" weight="0.26287878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5051282" side_tool="true" weight="0.2810606" />
@@ -557,7 +372,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.3087028" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3596059" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3596059" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -778,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -823,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/node_modules/ngx-bootstrap/progressbar/progressbar.component.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -842,31 +640,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="75">
           <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="33" selection-start-line="33" selection-end-line="34" />
+        <state relative-caret-position="250">
+          <caret line="33" column="83" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="83" />
           <folding>
-            <element signature="e#2961#2967#0" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#cui-breadcrumb#0;n#main#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
-          <folding>
-            <element signature="e#2653#2660#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="71">
+          <caret line="87" column="70" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
         </state>
       </provider>
     </entry>

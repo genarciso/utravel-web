@@ -7,11 +7,12 @@
     [asideMenuToggler]=false>
     <ul class="nav navbar-nav d-md-down-none" id="menu">
         <li class="nav-item px-3">
-            <a class="nav-link" [routerLinkActive]="['/dashboard/']">Viagens</a>
+            <a class="nav-link" [routerLink]="['/dashboard/']">Página inicial</a>
         </li>
         <li class="nav-item px-3">
-            <a class="nav-link" [routerLink]="['/dashboard/']">Rede social</a>
+            <a class="nav-link" [routerLinkActive]="['/dashboard/']">Suas viagens</a>
         </li>
+
     </ul>
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item dropdown" dropdown placement="bottom right">
@@ -26,11 +27,11 @@
                 <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i>Postagens<span
                     class="badge badge-success">42</span></a>
                 <div class="dropdown-header text-center"><strong>Viagens</strong></div>
-                <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span
+                <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tarefas<span
                     class="badge badge-danger">42</span></a>
 
                 <div class="dropdown-header text-center"><strong>Configurações</strong></div>
-                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Perfil</a>
                 <a class="dropdown-item" [routerLink]="['/inicial']"><i class="fa fa-lock"></i> Logout</a>
             </div>
         </li>
@@ -44,6 +45,11 @@
         <cui-breadcrumb>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn" [routerLink]="['/dashboard/']"><i class="icon-plus"></i> &nbsp;Nova viagem</a>
+                </div>
+            </li>
+            <li class="breadcrumb-menu d-md-down-none" style="margin-left: 0%;">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                     <a class="btn" [routerLink]="['/dashboard/']"><i class="icon-settings"></i> &nbsp;Configurações</a>
                 </div>

@@ -3,6 +3,8 @@
         <div class="card border-success">
             <div class="card-header">
                 Viagem Feita<span class="badge badge-success float-right">Concluida</span>
+                <button class="btn btn-default"><i
+                    class="icon-eye" (click)="showModal.show()"></i></button>
                 <button class="btn btn-default"><i class="icon-share"></i></button>
                 <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
                     class="icon-trash"></i></button>
@@ -20,6 +22,8 @@
             <div class="card-header">
                 Viagem em execução <span class="badge badge-primary float-right">Em andamento</span>
                 <button class="btn btn-default"><i
+                    class="icon-eye"></i></button>
+                <button class="btn btn-default"><i
                     class="icon-pencil"></i></button>
                 <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
                     class="icon-trash"></i></button>
@@ -35,6 +39,8 @@
         <div class="card border-warning">
             <div class="card-header">
                 Viagem a ser executada <span class="badge badge-warning float-right">Iniciada</span>
+                <button class="btn btn-default"><i
+                    class="icon-eye"></i></button>
                 <button class="btn btn-default"><i
                     class="icon-pencil"></i></button>
                 <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
@@ -68,6 +74,57 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger">Sim</button>
                 <button type="button" class="btn btn-secondary" (click)="dangerModal.hide()">Cancelar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div bsModal #showModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Minha lua de mel dos sonhos</h6>
+                <button type="button" class="close" (click)="showModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <b>Origem:</b> Natal, RN, Brasil <br/>
+                <b>Destino:</b> Londres, Inglaterra <br/>
+                <b>Data de inicio e fim :</b> 01/01/2019 até 15/02/2019 <br/>
+                <b>Resumo da viagem :</b> Essa viagem foi incrivel, conheci diversos lugares e os guardinhas da rainha!! <br/>
+                <hr/>
+
+                <b>Hotel:</b> London hotel <br/>
+                <b>Avaliação: </b><i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <hr/>
+
+
+                <b>Passeios:</b>
+                    <ul>
+                        <li>
+                            Palácio da rainha
+                        </li>
+                        <li>
+                            Roda gigante
+                        </li>
+                    </ul>
+                <hr/>
+
+                <b>Passagens:</b>
+                <ul>
+                    <li>
+                        2x passagens de avião internacional
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="showModal.hide()">Cancelar</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
