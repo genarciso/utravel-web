@@ -1,6 +1,5 @@
 import {Component, OnDestroy, Inject} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
-import {navItems} from '../../_nav';
 
 
 @Component({
@@ -9,7 +8,6 @@ import {navItems} from '../../_nav';
     styleUrls: ['./default-layout.component.css']
 })
 export class DefaultLayoutComponent implements OnDestroy {
-    public navItems = navItems;
     public sidebarMinimized = true;
     private changes: MutationObserver;
     public element: HTMLElement;
