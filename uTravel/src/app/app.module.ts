@@ -20,10 +20,13 @@ import {AppRoutingModule} from './app.routing';
 // Import 3rd party components
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {TabsModule} from 'ngx-bootstrap/tabs';
-import {ChartsModule} from 'ng2-charts';
 import {PaginaInicialModule} from './containers/pagina-inicial/pagina-inicial.module';
 import {DashboardViagemComponent} from './containers/default-layout/dashboard-viagem/dashboard-viagem.component';
 import {ModalModule, ProgressbarModule} from 'ngx-bootstrap';
+import { ViagemComponent } from './containers/viagem/viagem.component';
+import {ViagemModule} from "./containers/viagem/viagem.module";
+import { CardComponent } from './shared/card/card.component';
+import { CardGraficoComponent } from './shared/card-grafico/card-grafico.component';
 
 const APP_CONTAINERS = [
     DefaultLayoutComponent
@@ -42,15 +45,18 @@ const APP_CONTAINERS = [
         PerfectScrollbarModule,
         BsDropdownModule.forRoot(),
         TabsModule.forRoot(),
-        ChartsModule,
         PaginaInicialModule,
         ProgressbarModule,
-        ModalModule
+        ModalModule,
+        ViagemModule
     ],
     declarations: [
         AppComponent,
         ...APP_CONTAINERS,
-        DashboardViagemComponent
+        DashboardViagemComponent,
+        ViagemComponent,
+        CardComponent,
+        CardGraficoComponent
     ],
     providers: [{
         provide: LocationStrategy,

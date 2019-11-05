@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    chaveUsuarioAcessoLocalStorage: 'usuario_acesso',
+    chaveTokenAcessoLocalStorage: 'token_acesso',
+    apiHost: 'localhost:8080/utravel-api',
+    apiContext: '/api',
+    apiSSL: false
 };
+

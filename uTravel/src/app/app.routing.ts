@@ -4,6 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 // Import Containers
 import {DefaultLayoutComponent} from './containers';
 import {PaginaInicialComponent} from './containers/pagina-inicial/pagina-inicial.component';
+import {ViagemComponent} from "./containers/viagem/viagem.component";
 
 export const routes: Routes = [
     {
@@ -20,15 +21,14 @@ export const routes: Routes = [
         component: DefaultLayoutComponent,
         data: {
             title: 'Home'
-        },
-        children: [
-            // {
-            //     path: 'base',
-            //     loadChildren: () => import('./views/base/base.module').then(m => m.BaseModule)
-            // },
-        ]
+        }
     },
-    {path: '**', component: DefaultLayoutComponent}
+    {
+        path: 'dashboard/viagem',
+        component: ViagemComponent,
+        loadChildren: () => import('./containers/viagem/viagem.module').then(m => m.ViagemModule)
+    },
+    { path: '**', component: DefaultLayoutComponent }
 ];
 
 @NgModule({
