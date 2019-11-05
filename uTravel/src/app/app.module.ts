@@ -23,13 +23,15 @@ import {TabsModule} from 'ngx-bootstrap/tabs';
 import {PaginaInicialModule} from './containers/pagina-inicial/pagina-inicial.module';
 import {DashboardViagemComponent} from './containers/default-layout/dashboard-viagem/dashboard-viagem.component';
 import {ModalModule, ProgressbarModule} from 'ngx-bootstrap';
-import { ViagemComponent } from './containers/viagem/viagem.component';
-import {ViagemModule} from "./containers/viagem/viagem.module";
-import { CardComponent } from './shared/card/card.component';
-import { CardGraficoComponent } from './shared/card-grafico/card-grafico.component';
+import {ViagemComponent} from './containers/viagem/viagem.component';
+import {ViagemModule} from './containers/viagem/viagem.module';
+import {SharedModule} from './shared/shared.module';
+import {HighchartsChartModule} from "highcharts-angular";
 
 const APP_CONTAINERS = [
-    DefaultLayoutComponent
+    DefaultLayoutComponent,
+    DashboardViagemComponent,
+    ViagemComponent,
 ];
 
 @NgModule({
@@ -48,15 +50,14 @@ const APP_CONTAINERS = [
         PaginaInicialModule,
         ProgressbarModule,
         ModalModule,
-        ViagemModule
+        ViagemModule,
+        SharedModule,
+        HighchartsChartModule
     ],
     declarations: [
         AppComponent,
         ...APP_CONTAINERS,
-        DashboardViagemComponent,
-        ViagemComponent,
-        CardComponent,
-        CardGraficoComponent
+
     ],
     providers: [{
         provide: LocationStrategy,

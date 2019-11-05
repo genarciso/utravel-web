@@ -7,6 +7,7 @@ import { LocomocaoComponent } from './locomocao/locomocao.component';
 import { TurismoComponent } from './turismo/turismo.component';
 import {ViagemComponent} from './viagem.component';
 import {AppModule} from "../../app.module";
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import {AppModule} from "../../app.module";
         TurismoComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        SharedModule
     ]
 })
 export class ViagemModule { }
