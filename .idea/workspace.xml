@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c336e25-79b6-4fed-aad3-7970c1f5c169" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uTravel/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uTravel/src/app/core/util/http.util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/uTravel/src/app/core/util/http.util.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,81 +22,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/orcamento-geral/orcamento-geral.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/http/abstract-api.service.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/http/http.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state>
+              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/util/http.util.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding>
-                <element signature="n#style#0;n#li#1;n#cui-breadcrumb#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#highcharts-chart#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html">
+        <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="126" column="72" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="e#3801#3807#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-                <element signature="e#377#429#0" expanded="true" />
-                <element signature="e#679#735#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,15 +83,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>para</find>
       <find>url</find>
       <find>AjaxLoader</find>
       <find>nivo</find>
@@ -154,6 +120,7 @@
       <find>scrollspy</find>
       <find>testimonialslide</find>
       <find>root</find>
+      <find>styles</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,15 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/menu-inicial/menu-inicial.component.html" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/servicos/servicos.component.html" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.html" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/video/video.component.css" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/pagina-inicial.component.html" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/viagens/viagens.component.html" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-central/pagina-central.component.ts" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/core/modelos/usuario.ts" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.html" />
         <option value="$PROJECT_DIR$/uTravel/src/app/pagina-inicial/login/login.component.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/app/pagina-central/_nav.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/app/pagina-central/cabecalho/cabecalho.component.html" />
@@ -204,15 +162,24 @@
         <option value="$PROJECT_DIR$/uTravel/src/scss/_custom.scss" />
         <option value="$PROJECT_DIR$/uTravel/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/environments/environment.ts" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/uTravel/angular.json" />
         <option value="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html" />
         <option value="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem-routing.module.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.module.ts" />
         <option value="$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.component.html" />
         <option value="$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.module.ts" />
+        <option value="$PROJECT_DIR$/uTravel/angular.json" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/shared/card/card.component.html" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.html" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/containers/viagem/orcamento-geral/orcamento-geral.component.html" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/core/http/abstract-api.service.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/core/http/http-service.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/core/http/http.service.ts" />
+        <option value="$PROJECT_DIR$/uTravel/src/app/core/util/http.util.ts" />
       </list>
     </option>
   </component>
@@ -230,7 +197,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,12 +227,30 @@
               <item name="utravelWeb" type="462c0819:PsiDirectoryNode" />
               <item name="uTravel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utravelWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utravelWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="uTravel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="utravelWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="utravelWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="uTravel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,18 +337,36 @@
       <workItem from="1561072612986" duration="50000" />
       <workItem from="1572744057050" duration="3733000" />
       <workItem from="1572831648260" duration="763000" />
-      <workItem from="1572899806863" duration="15569000" />
+      <workItem from="1572899806863" duration="15943000" />
+      <workItem from="1572968750447" duration="9021000" />
+      <workItem from="1573059124876" duration="1018000" />
+      <workItem from="1573062147168" duration="879000" />
+      <workItem from="1573075287210" duration="440000" />
     </task>
+    <task id="LOCAL-00001" summary="Criação do componentes de detalhes da viagem&#10;&#10;Foi criado os componetes de detalhes de uma viagem, como hospedagem, turismo e etc.">
+      <created>1572924319972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572924319973</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Criar modulo http do projeto&#10;&#10;Criação do modulo http do projeto e criação da estrutura &#10;das telas de viagem">
+      <created>1572980254401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572980254401</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104049000" />
+    <option name="totallyTimeSpent" value="115781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="733" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948718" visible="true" weight="0.2810606" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948718" visible="true" weight="0.29924244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5051282" side_tool="true" weight="0.2810606" />
@@ -374,15 +376,15 @@
       <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.3087028" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.3087028" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.3087028" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3596059" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3596059" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32840723" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -400,70 +402,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação do componentes de detalhes da viagem&#10;&#10;Foi criado os componetes de detalhes de uma viagem, como hospedagem, turismo e etc." />
+    <MESSAGE value="Criar modulo http do projeto&#10;&#10;Criação do modulo http do projeto e criação da estrutura &#10;das telas de viagem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criar modulo http do projeto&#10;&#10;Criação do modulo http do projeto e criação da estrutura &#10;das telas de viagem" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/scrollspy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/assets/pagina_inicial/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/node_modules/ngx-bootstrap/progressbar/progressbar.component.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/pagina-inicial/pagina-inicial.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/views/chartjs/chartjs.component.html" />
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/views/chartjs/chartjs.component.ts" />
     <entry file="file://$PROJECT_DIR$/uTravel/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
@@ -582,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -596,20 +533,6 @@
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -656,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="126" column="72" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/node_modules/ngx-bootstrap/tabs/tab-heading.directive.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -679,22 +595,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="86">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/dashboard-viagem/dashboard-viagem.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        <state relative-caret-position="191">
+          <caret line="126" column="72" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
-            <element signature="e#377#429#0" expanded="true" />
-            <element signature="e#679#735#0" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#cui-breadcrumb#0;n#main#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -708,33 +629,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="265">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="87" column="80" selection-start-line="87" selection-start-column="80" selection-end-line="87" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="51" column="58" lean-forward="true" selection-start-line="39" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/card/card.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/orcamento-geral/orcamento-geral.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/viagem.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="115">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
           <folding>
-            <element signature="e#3801#3807#0" expanded="true" />
+            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#377#429#0" expanded="true" />
+            <element signature="e#679#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/default-layout/default-layout.component.html">
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/containers/viagem/orcamento-geral/orcamento-geral.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/http/http.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/util/http.util.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#li#1;n#cui-breadcrumb#0;n#main#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#highcharts-chart#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/shared/card-grafico/card-grafico.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uTravel/src/app/core/http/abstract-api.service.ts">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

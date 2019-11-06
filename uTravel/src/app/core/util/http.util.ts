@@ -1,3 +1,7 @@
+import {HttpErrorResponse, HttpHeaders} from '@angular/common/http';
+import {throwError} from 'rxjs';
+import {environment} from '../../../environments/environment';
+
 export class HttpUtil {
 
     public static url(path: string): string {
@@ -32,8 +36,7 @@ export class HttpUtil {
         } else {
             mensagens = HttpUtil.getMensagensDeErro(error.error);
         }
-        const erro: Erro = new Erro(error.status, mensagens);
-        return throwError(erro);
+        return throwError('Teste');
     }
 
     public static downloadFile(type: string, response: Blob, nomeArquivo: string) {
