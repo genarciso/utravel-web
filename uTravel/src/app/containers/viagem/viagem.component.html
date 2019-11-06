@@ -40,24 +40,37 @@
 <div class="app-body">
     <!-- Main content -->
     <main class="main">
-        <!-- Breadcrumb -->
-        <!-- breaking change 'cui-breadcrumb' -->
-        <cui-breadcrumb>
-            <!-- Breadcrumb Menu-->
-            <li class="breadcrumb-menu d-md-down-none">
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <a class="btn" [routerLink]="['/dashboard/']"><i class="icon-plus"></i> &nbsp;Nova viagem</a>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div  class="col-sm-12">
+                    <h3>Minha lua de mel dos sonhos</h3>
+                    <hr/>
+                    <div>
+                        <!-- required for floating -->
+                        <!-- Nav tabs -->
+                        <tabset>
+                            <tab active="true">
+                                <ng-template tabHeading>
+                                    Orçamento geral
+                                </ng-template>
+                                <app-orcamento-geral></app-orcamento-geral>
+                            </tab>
+                            <tab heading="Restaurantes" >Restaurantes
+                                <app-restaurante></app-restaurante>
+                            </tab>
+                            <tab heading="Locomoção">Locomoção
+                                <app-locomocao></app-locomocao>
+                            </tab>
+                            <tab heading="Hospedagem">Hospedagem
+                                <app-hospedagem></app-hospedagem>
+                            </tab>
+                            <tab heading="Turismo">Turismo
+                                <app-turismo></app-turismo>
+                            </tab>
+                        </tabset>
+                    </div>
                 </div>
-            </li>
-            <li class="breadcrumb-menu d-md-down-none" style="margin-left: 0%;">
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <a class="btn" [routerLink]="['/dashboard/']"><i class="icon-settings"></i> &nbsp;Configurações</a>
-                </div>
-            </li>
-        </cui-breadcrumb>
-
-        <div class="container-fluid">
-            <app-dashboard-viagem></app-dashboard-viagem>
+            </div>
         </div><!-- /.container-fluid -->
     </main>
 </div>
