@@ -31,7 +31,20 @@
                             "includePaths": ["./node_modules"]
                         },
                         "scripts": [
-                            "node_modules/chart.js/dist/Chart.min.js"
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                            "src/assets/pagina_inicial/js/custom.js",
+                            "src/assets/pagina_inicial/js/scrollspy.js",
+                            "src/assets/pagina_inicial/js/jquery.sticky.js",
+                            "src/assets/pagina_inicial/js/jquery.flexslider-min.js",
+                            "src/assets/pagina_inicial/js/morphext.min.js",
+                            "src/assets/pagina_inicial/js/jquery.mb.YTPlayer.js",
+                            "src/assets/pagina_inicial/js/jquery.easing.min.js",
+                            "src/assets/pagina_inicial/js/jquery.scrollTo.js",
+                            "src/assets/pagina_inicial/js/jquery.appear.js",
+                            "src/assets/pagina_inicial/js/stellar.js",
+                            "src/assets/pagina_inicial/js/wow.min.js",
+                            "src/assets/pagina_inicial/js/grayscale.js"
                         ]
                     },
                     "configurations": {
@@ -79,7 +92,20 @@
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "src/tsconfig.spec.json",
                         "scripts": [
-                            "node_modules/chart.js/dist/Chart.min.js"
+                            "node_modules/jquery/dist/jquery.min.js",
+                            "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                            "src/assets/pagina_inicial/js/custom.js",
+                            "src/assets/pagina_inicial/js/scrollspy.js",
+                            "src/assets/pagina_inicial/js/jquery.sticky.js",
+                            "src/assets/pagina_inicial/js/jquery.flexslider-min.js",
+                            "src/assets/pagina_inicial/js/morphext.min.js",
+                            "src/assets/pagina_inicial/js/jquery.mb.YTPlayer.js",
+                            "src/assets/pagina_inicial/js/jquery.easing.min.js",
+                            "src/assets/pagina_inicial/js/jquery.scrollTo.js",
+                            "src/assets/pagina_inicial/js/jquery.appear.js",
+                            "src/assets/pagina_inicial/js/stellar.js",
+                            "src/assets/pagina_inicial/js/wow.min.js",
+                            "src/assets/pagina_inicial/js/grayscale.js"
                         ],
                         "styles": [
                             "node_modules/flag-icon-css/css/flag-icon.css",

@@ -12,8 +12,17 @@ export class CardGraficoComponent implements OnInit {
     chartOptions: Highcharts.Options = {
         series: [{
             data: [1, 2, 3],
-            type: 'line'
-        }]
+            type: 'column',
+            color: 'red',
+            name: 'Orçamento esperado'
+        },
+            {
+                data: [3, 2, 1],
+                type: 'column',
+                color: 'blue',
+                name: 'Orçamento gasto'
+            }],
+        title: {text: 'Orçamento'}
     };
     constructor() { }
 

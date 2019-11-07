@@ -7,7 +7,7 @@ export const environment = {
     production: false,
     chaveUsuarioAcessoLocalStorage: 'usuario_acesso',
     chaveTokenAcessoLocalStorage: 'token_acesso',
-    apiHost: 'localhost:8080/utravel-api',
+    apiHost: 'localhost:8080/utravel',
     apiContext: '/api',
     apiSSL: false
 };
