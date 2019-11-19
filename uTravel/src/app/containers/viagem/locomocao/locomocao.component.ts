@@ -15,4 +15,14 @@ export class LocomocaoComponent {
 
     valor_previsto: number = 300
     valor_gasto: number = 275;
+
+    bsInlineValue = new Date();
+    bsInlineRangeValue: Date[];
+    maxDate = new Date();
+
+    constructor() {
+        this.maxDate.setDate(this.maxDate.getDate() + 7);
+        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+    }
 }
+
