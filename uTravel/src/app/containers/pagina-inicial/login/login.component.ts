@@ -3,6 +3,7 @@ import {BsModalRef, BsModalService} from 'ngx-bootstrap';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Usuario} from '../../../core/modelos/usuario.model';
 import {Router} from '@angular/router';
+import {AutenticacaoService} from '../../../core/http/autenticacao.service';
 
 @Component({
     selector: 'app-login',
@@ -15,13 +16,14 @@ export class LoginComponent implements OnInit {
     formulario: FormGroup;
     formularioEnviado = false;
     login: Usuario;
-    usuario: string;
-    senha: string;
+
     constructor(
         private modalService: BsModalService,
         private formBuilder: FormBuilder,
-        private router: Router
+        private router: Router,
+        public autenticacaoService: AutenticacaoService
     ) {
+        this.login = new Usuario();
         modalService.onHidden.subscribe(() => {
             this.formularioEnviado = false;
         });
@@ -57,7 +59,11 @@ export class LoginComponent implements OnInit {
     }
 
     confirmar() {
-        this.modal.hide();
-        this.router.navigate(['/dashboard']);
+        this.autenticacaoService.entrar(this.login.usuario, this.login.senha);
+        this.autenticacaoService.aoEntrar().subscribe(() => {
+            this.modal.hide();
+            this.router.navigate(['/dashboard']);
+        });
+
     }
 }
