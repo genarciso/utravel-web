@@ -10,13 +10,13 @@ export class HttpUtil {
     }
 
     public static headers(): object {
+        console.log(HttpUtil.httpHeaders());
         return {headers: HttpUtil.httpHeaders(), observe: 'response'};
     }
 
     public static httpHeaders() {
         const headersParams = {'Content-Type': 'application/json;charset=utf-8'};
         headersParams['Accept'] = 'application/json';
-        headersParams['X-Origem'] = 'WINBOX_WEB';
         const token: string = localStorage.getItem(environment.chaveTokenAcessoLocalStorage);
         if (token) {
             headersParams['Authorization'] = 'Bearer ' + token;

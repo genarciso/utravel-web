@@ -83,10 +83,6 @@
 }
 
 #imagemLogo {
-    width: 5%;
-    height: auto;
-}
-
-#logo {
-    color: #64a19d;
+    width: 5rem;
+    height: 3.5rem;
 }
