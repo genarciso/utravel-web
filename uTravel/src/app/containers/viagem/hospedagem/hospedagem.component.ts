@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { ListItem } from "../../../core/modelos/list-item.model";
 
 @Component({
-  selector: 'app-hospedagem',
-  templateUrl: './hospedagem.component.html',
-  styleUrls: ['./hospedagem.component.scss']
+    selector: "app-hospedagem",
+    templateUrl: "./hospedagem.component.html",
+    styleUrls: ["./hospedagem.component.scss"]
 })
-export class HospedagemComponent implements OnInit {
+export class HospedagemComponent {
+    lista_hoteis: Array<ListItem> = [
+        new ListItem("Hotel Barreira Roxa", "123"),
+        new ListItem("Ponta Negra Beach", "456"),
+        new ListItem("Piramide Hotel", "789")
+    ];
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    valor_previsto: number = 500;
+    valor_gasto: number = 678;
 }

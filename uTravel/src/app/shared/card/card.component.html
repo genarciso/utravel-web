@@ -1,8 +1,10 @@
 <div class="card">
     <div class="card-header">
-        <p> Teste header</p>
+        <p>{{ title }}</p>
     </div>
     <div class="card-body">
-        <p> Teste body</p>
+        <ul *ngFor="let item of lista">
+            <li>{{ item.name }} - <input type="checkbox" value="{{item.id}}"/></li>
+        </ul>
     </div>
 </div>
