@@ -8,6 +8,7 @@ import { TurismoComponent } from './turismo/turismo.component';
 import {ViagemComponent} from './viagem.component';
 import {AppModule} from "../../app.module";
 import {SharedModule} from "../../shared/shared.module";
+import {BsDatepickerModule} from 'ngx-bootstrap';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import {SharedModule} from "../../shared/shared.module";
     ],
     imports: [
         CommonModule,
-        SharedModule
+        SharedModule,
+        BsDatepickerModule
     ]
 })
 export class ViagemModule { }

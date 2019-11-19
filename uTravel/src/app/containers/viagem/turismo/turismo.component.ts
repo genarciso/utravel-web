@@ -18,4 +18,13 @@ export class TurismoComponent {
 
     valor_previsto: number = 566;
     valor_gasto: number = 200;
+
+    bsInlineValue = new Date();
+    bsInlineRangeValue: Date[];
+    maxDate = new Date();
+
+    constructor() {
+        this.maxDate.setDate(this.maxDate.getDate() + 7);
+        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+    }
 }
