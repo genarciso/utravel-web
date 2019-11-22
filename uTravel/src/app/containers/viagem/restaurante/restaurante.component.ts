@@ -14,4 +14,13 @@ export class RestauranteComponent {
     ];
     valor_previsto: number = 40;
     valor_gasto: number = 120;
+
+    bsInlineValue = new Date();
+    bsInlineRangeValue: Date[];
+    maxDate = new Date();
+
+    constructor() {
+        this.maxDate.setDate(this.maxDate.getDate() + 7);
+        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+    }
 }

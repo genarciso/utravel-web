@@ -22,7 +22,7 @@ import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {TabsModule} from 'ngx-bootstrap/tabs';
 import {PaginaInicialModule} from './containers/pagina-inicial/pagina-inicial.module';
 import {DashboardViagemComponent} from './containers/default-layout/dashboard-viagem/dashboard-viagem.component';
-import {ModalModule, ProgressbarModule} from 'ngx-bootstrap';
+import {BsDatepickerModule, ModalModule, ProgressbarModule} from 'ngx-bootstrap';
 import {ViagemComponent} from './containers/viagem/viagem.component';
 import {ViagemModule} from './containers/viagem/viagem.module';
 import {SharedModule} from './shared/shared.module';
@@ -55,6 +55,7 @@ const APP_CONTAINERS = [
         ViagemModule,
         SharedModule,
         HighchartsChartModule,
+        BsDatepickerModule.forRoot(),
         CoreModule,
         HttpClientModule
     ],
@@ -63,10 +64,9 @@ const APP_CONTAINERS = [
         ...APP_CONTAINERS,
 
     ],
-    providers: [{
-        provide: LocationStrategy,
-        useClass: HashLocationStrategy
-    }],
+    providers: [
+        {provide: LocationStrategy, useClass: HashLocationStrategy}
+        ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
