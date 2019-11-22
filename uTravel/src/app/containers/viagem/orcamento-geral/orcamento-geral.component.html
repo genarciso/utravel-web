@@ -1,26 +1,40 @@
 <div class="container pt-4">
     <div class="row">
         <div class="col-sm">
-            <app-card-grafico [title]="'Orçamento geral'"></app-card-grafico>
+            <app-card-grafico
+                [previsto]="valor_previsto"
+                [gasto]="valor_gasto"
+            ></app-card-grafico>
+        </div>
+        <div class="col-sm">
+            <app-card-grafico
+                [previsto]="valor_previsto"
+                [gasto]="valor_gasto"
+            ></app-card-grafico>
         </div>
     </div>
     <div class="row">
         <div class="col-sm">
-            <app-card-grafico [title]="'Orçamento hospedagem'"></app-card-grafico>
+            <app-card-grafico
+                [previsto]="valor_previsto"
+                [gasto]="valor_gasto"
+            ></app-card-grafico>
         </div>
         <div class="col-sm">
-            <app-card-grafico [title]="'Orçamento locomoção'"></app-card-grafico>
+            <app-card-grafico
+                [previsto]="valor_previsto"
+                [gasto]="valor_gasto"
+            ></app-card-grafico>
         </div>
     </div>
     <div class="row">
         <div class="col-sm">
-            <app-card-grafico [title]="'Orçamento restaurante'"></app-card-grafico>
-        </div>
-        <div class="col-sm">
-            <app-card-grafico [title]="'Orçamento turismo'"></app-card-grafico>
+            <app-card-grafico
+                [previsto]="valor_previsto"
+                [gasto]="valor_gasto"
+            ></app-card-grafico>
         </div>
     </div>
-
 </div>
 
 

@@ -15,4 +15,13 @@ export class HospedagemComponent {
 
     valor_previsto: number = 500;
     valor_gasto: number = 678;
+
+    bsInlineValue = new Date();
+    bsInlineRangeValue: Date[];
+    maxDate = new Date();
+
+    constructor() {
+        this.maxDate.setDate(this.maxDate.getDate() + 7);
+        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+    }
 }

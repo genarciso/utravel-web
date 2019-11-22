@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-orcamento-geral',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrcamentoGeralComponent implements OnInit {
 
+    valor_previsto: number = 500;
+    valor_gasto: number = 678;
   constructor() { }
 
   ngOnInit() {
