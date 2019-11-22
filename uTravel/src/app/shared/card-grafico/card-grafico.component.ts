@@ -1,10 +1,10 @@
-import { Component, OnInit, Input } from "@angular/core";
-import * as Highcharts from "highcharts";
+import {Component, Input, OnInit} from '@angular/core';
+import * as Highcharts from 'highcharts';
 
 @Component({
-    selector: "app-card-grafico",
-    templateUrl: "./card-grafico.component.html",
-    styleUrls: ["./card-grafico.component.scss"]
+  selector: 'app-card-grafico',
+  templateUrl: './card-grafico.component.html',
+  styleUrls: ['./card-grafico.component.scss']
 })
 export class CardGraficoComponent implements OnInit {
     @Input() previsto: number = 0;
@@ -34,5 +34,4 @@ export class CardGraficoComponent implements OnInit {
             title: { text: "Orçamento" }
         };
 
-    }
 }

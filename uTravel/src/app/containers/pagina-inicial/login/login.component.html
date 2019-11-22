@@ -11,14 +11,14 @@
             <p class="text-muted d-block font-weight-semibold">Entre com sua conta e a sua senha</p>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    <span class="input-group-text"><label for="usuario"><i class="fa fa-user"></i></label></span>
                 </div>
                 <input name="usuario"
                        id="usuario"
                        [maxLength]="50"
                        type="text"
                        [ngClass]="(loginInvalido)? 'form-control is-invalid' : 'form-control'"
-                       [(ngModel)]="usuario"
+                       [(ngModel)]="login.usuario"
                        formControlName="usuario"
                        placeholder="Usuário"
                        required/>
@@ -35,7 +35,7 @@
                        [maxLength]="50"
                        type="password"
                        class="form-control"
-                       [(ngModel)]="senha"
+                       [(ngModel)]="login.senha"
                        formControlName="senha"
                        required
                        placeholder="Senha"

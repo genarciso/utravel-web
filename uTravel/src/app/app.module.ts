@@ -26,7 +26,9 @@ import {ModalModule, ProgressbarModule} from 'ngx-bootstrap';
 import {ViagemComponent} from './containers/viagem/viagem.component';
 import {ViagemModule} from './containers/viagem/viagem.module';
 import {SharedModule} from './shared/shared.module';
-import {HighchartsChartModule} from "highcharts-angular";
+import {HighchartsChartModule} from 'highcharts-angular';
+import {CoreModule} from './core/core.module';
+import {HttpClientModule} from "@angular/common/http";
 
 const APP_CONTAINERS = [
     DefaultLayoutComponent,
@@ -52,7 +54,9 @@ const APP_CONTAINERS = [
         ModalModule,
         ViagemModule,
         SharedModule,
-        HighchartsChartModule
+        HighchartsChartModule,
+        CoreModule,
+        HttpClientModule
     ],
     declarations: [
         AppComponent,
