@@ -1,19 +1,18 @@
 import { Injectable } from '@angular/core';
 import {AbstractCrudService} from '../../../http/abstract-crud.service';
-import {Empresa} from '../../../modelos/dominio/empresa.model';
+import {Usuario} from '../../../modelos/dominio/usuario.model';
 import {HttpService} from '../../../http/http.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class EmpresaService extends AbstractCrudService<Empresa> {
+export class UsuarioService extends AbstractCrudService<Usuario> {
 
   constructor(protected httpService: HttpService) {
       super(httpService);
   }
 
     getUrlBase(): string {
-        return 'empresa';
+        return 'usuario';
     }
-
 }

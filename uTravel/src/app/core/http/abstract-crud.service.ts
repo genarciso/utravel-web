@@ -7,7 +7,7 @@ export abstract class AbstractCrudService<T extends Entidade> {
     public _aoSalvarEvento = new Subject<T>();
     public _aoCarregarEvento = new Subject<T[]>();
     public _aoEditarEvento = new Subject<T>();
-    public _aoDeletarEvento = new Subject()<number[]>();
+    public _aoDeletarEvento = new Subject<number[]>();
 
     constructor(protected httpService: HttpService) {}
 
