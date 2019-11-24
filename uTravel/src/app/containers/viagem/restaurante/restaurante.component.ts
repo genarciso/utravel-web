@@ -35,4 +35,8 @@ export class RestauranteComponent {
             classes: ["bg-warning"]
         }));
     }
+
+    adicionaNovoRestaurante() {
+        alert("adiciona restauranteee");
+    }
 }
