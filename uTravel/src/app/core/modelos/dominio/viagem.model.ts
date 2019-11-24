@@ -1,4 +1,4 @@
-import {Entidade, EntidadeBuilder} from './entidade.model';
+import { Entidade, EntidadeBuilder } from "./entidade.model";
 
 export class Viagem extends Entidade {
     titulo: string;
@@ -6,7 +6,13 @@ export class Viagem extends Entidade {
     dataInicio: Date;
     dataFim: Date;
 
-    constructor(titulo: string, objetivo: string, dataInicio: Date, dataFim: Date, id?: number) {
+    constructor(
+        titulo: string,
+        objetivo: string,
+        dataInicio: Date,
+        dataFim: Date,
+        id?: number
+    ) {
         super(id);
 
         this.titulo = titulo;
@@ -17,6 +23,4 @@ export class Viagem extends Entidade {
     }
 }
 
-export class ViagemBuilder extends EntidadeBuilder<Viagem> {
-
-}
+export class ViagemBuilder extends EntidadeBuilder<Viagem> {}
