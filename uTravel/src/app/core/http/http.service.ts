@@ -50,20 +50,12 @@ export class HttpService {
         });
     }
 
-    // public download(url: string, parametros: any): Observable<Blob> {
-    //     return this.http.post(HttpUtil.url(url), parametros, {responseType: 'blob'})
-    //         .pipe(
-    //             catchError(HttpUtil.processarErro)
-    //         );
-    // }
-
     private verificarRespostaRequisicao(subscribe: Observable<any>, observer: Subscriber<any>) {
         subscribe.subscribe(data => {
             this.verificarReautenticacaoUsuario(data.headers);
             observer.next(data.body);
             observer.complete();
         }, error => {
-            // this.verificarAutenticacaoValida(error);
             observer.error(error);
             observer.complete();
         });

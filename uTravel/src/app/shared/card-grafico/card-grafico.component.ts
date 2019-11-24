@@ -11,7 +11,7 @@ export class CardGraficoComponent implements OnInit {
     @Input() gasto: number = 0;
 
     Highcharts: typeof Highcharts = Highcharts;
-    chartOptions: Highcharts.Options = {}
+    chartOptions: Highcharts.Options = {};
 
     constructor() {}
 
@@ -20,18 +20,18 @@ export class CardGraficoComponent implements OnInit {
             series: [
                 {
                     data: [this.previsto],
-                    type: "column",
-                    color: "red",
-                    name: "Orçamento esperado"
+                    type: 'column',
+                    color: 'red',
+                    name: 'Orçamento esperado'
                 },
                 {
                     data: [this.gasto],
-                    type: "column",
-                    color: "blue",
-                    name: "Orçamento gasto"
+                    type: 'column',
+                    color: 'blue',
+                    name: 'Orçamento gasto'
                 }
             ],
-            title: { text: "Orçamento" }
+            title: {text: 'Orçamento'}
         };
-
+    }
 }
