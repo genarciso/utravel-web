@@ -4,7 +4,7 @@
             <app-card
                 [title]="'Restaurantes a serem visitados'"
                 [lista]="lista_restaurante"
-                [action]="adicionaNovoRestaurante"
+                [modal]="restauranteFormModal"
             ></app-card>
         </div>
         <div class="col-sm">
@@ -14,9 +14,10 @@
                 </div>
                 <div class="card-body">
                     <bs-datepicker-inline
-                    ngModel
-                    bsDaterangepicker
-                    [dateCustomClasses]="dias_selecionados"></bs-datepicker-inline>
+                        ngModel
+                        bsDaterangepicker
+                        [dateCustomClasses]="dias_selecionados"
+                    ></bs-datepicker-inline>
                 </div>
             </div>
         </div>
@@ -30,3 +31,45 @@
         </div>
     </div>
 </div>
+
+<div
+    bsModal
+    #restauranteFormModal="bs-modal"
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-lg modal-info" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title">Escolha um Restaurante</h6>
+                <button
+                    type="button"
+                    class="close"
+                    (click)="restauranteFormModal.hide()"
+                    aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" (click)="adicionaNovoRestaurante()"
+                    >Adicionar</a
+                >
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    (click)="restauranteFormModal.hide()"
+                >
+                    Cancelar
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

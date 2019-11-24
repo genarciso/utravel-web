@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, TemplateRef } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
 import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker";
 
@@ -34,9 +34,5 @@ export class RestauranteComponent {
             date: restaurante.date,
             classes: ["bg-warning"]
         }));
-    }
-
-    adicionaNovoRestaurante() {
-        alert("adiciona restauranteee");
     }
 }
