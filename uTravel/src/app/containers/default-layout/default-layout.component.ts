@@ -1,5 +1,6 @@
 import {Component, OnDestroy, Inject} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
+import {AutenticacaoService} from '../../core/http/login/autenticacao.service';
 
 
 @Component({
@@ -12,7 +13,8 @@ export class DefaultLayoutComponent implements OnDestroy {
     private changes: MutationObserver;
     public element: HTMLElement;
 
-    constructor(@Inject(DOCUMENT) _document?: any) {
+    constructor(private autenticacaoService: AutenticacaoService,
+        @Inject(DOCUMENT) _document?: any ) {
 
         this.changes = new MutationObserver((mutations) => {
             this.sidebarMinimized = _document.body.classList.contains('sidebar-minimized');
@@ -26,5 +28,9 @@ export class DefaultLayoutComponent implements OnDestroy {
 
     ngOnDestroy(): void {
         this.changes.disconnect();
+    }
+
+    sair(): void {
+        this.autenticacaoService.sair();
     }
 }
