@@ -1,8 +1,9 @@
 import { Entidade, EntidadeBuilder } from "./entidade.model";
-import { Viagem } from './viagem.model';
-import { Restaurante } from './restaurante.model';
-import { Passeio } from './passeio.model';
-import { VeiculoAlugado } from './veiculoAlugado.model';
+import { Viagem } from "./viagem.model";
+import { Restaurante } from "./restaurante.model";
+import { Passeio } from "./passeio.model";
+import { VeiculoAlugado } from "./veiculoAlugado.model";
+import { Reserva } from "./reserva.model";
 
 export class Evento extends Entidade {
     titulo: string;
@@ -19,6 +20,7 @@ export class Evento extends Entidade {
     passagem: Passagem;
 
     constructor(
+        id: number,
         titulo: string,
         valorEstimado: number,
         valorTotalGasto: number,
@@ -29,11 +31,9 @@ export class Evento extends Entidade {
         reserva: Reserva,
         passeio: Passeio,
         veiculoAlugado: VeiculoAlugado,
-        passagem: Passagem,
-        id?: number,
+        passagem: Passagem
     ) {
         super(id);
-
         this.titulo = titulo;
         this.valorEstimado = valorEstimado;
         this.valorTotalGasto = valorTotalGasto;
