@@ -7,11 +7,11 @@ export class Viagem extends Entidade {
     dataFim: Date;
 
     constructor(
+        id: number,
         titulo: string,
         objetivo: string,
         dataInicio: Date,
         dataFim: Date,
-        id?: number
     ) {
         super(id);
 

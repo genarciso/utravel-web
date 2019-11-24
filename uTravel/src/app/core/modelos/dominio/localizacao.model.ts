@@ -1,11 +1,11 @@
-import {Entidade, EntidadeBuilder} from './entidade.model';
+import { Entidade, EntidadeBuilder } from "./entidade.model";
 
 export class Localizacao extends Entidade {
     pais: string;
     estado: string;
     cidade: string;
 
-    constructor(pais: string, estado: string, cidade: string, id?: number) {
+    constructor(id: number, pais: string, estado: string, cidade: string) {
         super(id);
         this.pais = pais;
         this.estado = estado;
@@ -13,6 +13,4 @@ export class Localizacao extends Entidade {
     }
 }
 
-export class LocalizacaoBuilder extends EntidadeBuilder<Localizacao> {
-
-}
+export class LocalizacaoBuilder extends EntidadeBuilder<Localizacao> {}

@@ -18,12 +18,12 @@ export class Veiculo extends Entidade {
     tipoTransporte: TipoTransporte;
 
     constructor(
+        id: number,
         placa: string,
         cor: string,
         modelo: string,
         marca: string,
         tipoTransporte: TipoTransporte,
-        id?: number
     ) {
         super(id);
 

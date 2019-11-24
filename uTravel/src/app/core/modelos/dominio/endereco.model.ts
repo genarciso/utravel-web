@@ -5,11 +5,11 @@ export class Endereco extends Entidade {
     endereco: string;
     localizacao: Localizacao;
 
-    constructor(endereco: string, localizacao?: Localizacao, id?: number) {
+    constructor(id: number, endereco: string, localizacao: Localizacao) {
         super(id);
         this.endereco = endereco;
 
-        this.localizacao = localizacao || null;
+        this.localizacao = localizacao;
     }
 }
 

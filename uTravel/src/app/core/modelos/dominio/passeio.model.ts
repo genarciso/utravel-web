@@ -7,13 +7,13 @@ export class Passeio extends Entidade {
 
     endereco: Endereco;
 
-    constructor(nome: string, tipo: string, id?: number, endereco?: Endereco) {
+    constructor(id: number, nome: string, tipo: string, endereco: Endereco) {
         super(id)
 
         this.nome = nome;
         this.tipo = tipo;
 
-        this.endereco = endereco || null;
+        this.endereco = endereco;
     }
 }
 

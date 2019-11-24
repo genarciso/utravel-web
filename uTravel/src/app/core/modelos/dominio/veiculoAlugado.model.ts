@@ -6,7 +6,7 @@ export class VeiculoAlugado extends Entidade {
     empresaLocadora: Empresa;
     veiculo: Veiculo;
 
-    constructor(empresaLocadora: Empresa, veiculo: Veiculo, id?: number) {
+    constructor(id: number, empresaLocadora: Empresa, veiculo: Veiculo) {
         super(id);
 
         this.empresaLocadora = empresaLocadora;

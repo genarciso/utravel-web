@@ -6,13 +6,13 @@ export class Empresa extends Entidade {
     documento: string;
     endereco: Endereco;
 
-    constructor(nome: string, documento: string, id?: number, endereco?: Endereco) {
+    constructor(id: number, nome: string, documento: string, endereco: Endereco) {
         super(id);
 
         this.nome = nome;
         this.documento = documento;
 
-        this.endereco = endereco || null;
+        this.endereco = endereco;
     }
 }
 

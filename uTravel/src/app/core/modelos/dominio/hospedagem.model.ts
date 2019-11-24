@@ -20,19 +20,19 @@ export class Hospedagem extends Entidade {
     empresa: Empresa;
 
     constructor(
+        id: number,
         titulo: string,
         tipoHospedagem: TipoHospedagem,
-        id?: number,
-        endereco?: Endereco,
-        empresa?: Empresa
+        endereco: Endereco,
+        empresa: Empresa
     ) {
         super(id);
 
         this.titulo = titulo;
         this.tipoHospedagem = tipoHospedagem;
 
-        this.endereco = endereco || null;
-        this.empresa = empresa || null;
+        this.endereco = endereco;
+        this.empresa = empresa;
     }
 }
 

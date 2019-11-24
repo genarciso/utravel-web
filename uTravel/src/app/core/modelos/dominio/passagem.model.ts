@@ -17,8 +17,8 @@ export class Passagem extends Entidade {
         empresa: Empresa,
         enderecoChegadaDestino: Endereco,
         enderecoSaidaOrigem: Endereco,
-        dataChegada?: Date,
-        enderecoParadas?: Endereco[],
+        dataChegada: Date,
+        enderecoParadas: Endereco[],
     ) {
         super(id);
 
@@ -26,8 +26,8 @@ export class Passagem extends Entidade {
         this.empresa = empresa;
         this.enderecoChegadaDestino = enderecoChegadaDestino;
         this.enderecoSaidaOrigem = enderecoSaidaOrigem;
-        this.dataChegada = dataChegada || null;
-        this.enderecoParadas = enderecoParadas || null;
+        this.dataChegada = dataChegada;
+        this.enderecoParadas = enderecoParadas;
     }
 }
 
