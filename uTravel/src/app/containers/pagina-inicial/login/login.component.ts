@@ -59,11 +59,11 @@ export class LoginComponent implements OnInit {
     }
 
     confirmar() {
-        this.autenticacaoService.entrar(this.login.usuario, this.login.senha);
-        this.autenticacaoService.aoEntrar().subscribe(() => {
-            this.modal.hide();
-            this.router.navigate(['/dashboard']);
-        });
-
+        // this.autenticacaoService.entrar(this.login.usuario, this.login.senha);
+        // this.autenticacaoService.aoEntrar().subscribe(() => {
+        //     this.modal.hide();
+        //     this.router.navigate(['/dashboard']);
+        // });
+        this.router.navigate(['/dashboard']);
     }
 }
