@@ -1,13 +1,14 @@
 import {Injectable} from '@angular/core';
 import {Observable, Subject} from 'rxjs';
-import {Usuario, UsuarioBuilder} from '../modelos/usuario.model';
-import {HttpService} from './http.service';
+import {Usuario, UsuarioBuilder} from '../../modelos/dominio/usuario.model';
+import {HttpService} from '../http.service';
 import {Router} from '@angular/router';
-import {environment} from '../../../environments/environment';
+import {environment} from '../../../../environments/environment';
 import {isNullOrUndefined} from 'util';
+import {HttpUtil} from '../../util/http.util';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class AutenticacaoService {
 
@@ -16,6 +17,8 @@ export class AutenticacaoService {
     private aoEntrarErroEvento: Subject<string> = new Subject();
     private aoEncontrarUsuarioIncompletoEvento: Subject<string> = new Subject();
     private _usuarioLogado: Usuario;
+    private _header: object;
+
 
     constructor(private httpService: HttpService,
                 private router: Router) {
@@ -57,12 +60,23 @@ export class AutenticacaoService {
     }
 
     public entrar(login: string, senha: string): void {
-        this.httpService.post('/usuario/login', {email: login, senha: senha}).subscribe(response => {
-            localStorage.setItem(environment.chaveTokenAcessoLocalStorage, response.token);
-            this.salvarUsuario(this.serializarUsuario(response));
-            this.aoEntrarEvento.next(this._usuarioLogado);
-            this.router.navigateByUrl('/');
-        });
+        this._header = {
+            headers: HttpUtil.httpHeaders(),
+            observe: 'response',
+            responseType: 'text'
+        };
+
+        this.httpService.post('/usuario/login', {email: login, senha: senha}, this._header)
+            .subscribe(response => {
+                let token;
+                if (response.token === undefined) {
+                    token = response.slice(7);
+                }
+                localStorage.setItem(environment.chaveTokenAcessoLocalStorage, response.token ? response.token : token);
+                this.salvarUsuario(this.serializarUsuario(response));
+                this.aoEntrarEvento.next(this._usuarioLogado);
+                this.router.navigateByUrl('dashboard/');
+            });
     }
 
     public sair(): void {
@@ -70,7 +84,7 @@ export class AutenticacaoService {
         localStorage.clear();
         this._usuarioLogado = null;
         this.aoSairEvento.next(usuario);
-        this.router.navigateByUrl('/login');
+        this.router.navigateByUrl('/');
     }
 
     public isLogged(): boolean {

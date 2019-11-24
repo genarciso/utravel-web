@@ -1,9 +1,9 @@
 import {Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import {BsModalRef, BsModalService} from 'ngx-bootstrap';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {Usuario} from '../../../core/modelos/usuario.model';
+import {Usuario} from '../../../core/modelos/dominio/usuario.model';
 import {Router} from '@angular/router';
-import {AutenticacaoService} from '../../../core/http/autenticacao.service';
+import {AutenticacaoService} from '../../../core/http/login/autenticacao.service';
 
 @Component({
     selector: 'app-login',

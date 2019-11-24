@@ -8,13 +8,7 @@ import {AppComponent} from './app.component';
 // Import containers
 import {DefaultLayoutComponent} from './containers';
 
-import {
-    AppAsideModule,
-    AppBreadcrumbModule,
-    AppFooterModule,
-    AppHeaderModule,
-    AppSidebarModule,
-} from '@coreui/angular';
+import {AppAsideModule, AppBreadcrumbModule, AppFooterModule, AppHeaderModule, AppSidebarModule} from '@coreui/angular';
 // Import routing module
 import {AppRoutingModule} from './app.routing';
 // Import 3rd party components
@@ -28,7 +22,8 @@ import {ViagemModule} from './containers/viagem/viagem.module';
 import {SharedModule} from './shared/shared.module';
 import {HighchartsChartModule} from 'highcharts-angular';
 import {CoreModule} from './core/core.module';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {HttpInterceptorService} from './core/http/http.interceptor.service';
 
 const APP_CONTAINERS = [
     DefaultLayoutComponent,
@@ -65,7 +60,8 @@ const APP_CONTAINERS = [
 
     ],
     providers: [
-        {provide: LocationStrategy, useClass: HashLocationStrategy}
+        {provide: LocationStrategy, useClass: HashLocationStrategy},
+        {provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true}
         ],
     bootstrap: [AppComponent]
 })

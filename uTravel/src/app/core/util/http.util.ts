@@ -10,7 +10,6 @@ export class HttpUtil {
     }
 
     public static headers(): object {
-        console.log(HttpUtil.httpHeaders());
         return {headers: HttpUtil.httpHeaders(), observe: 'response'};
     }
 
@@ -26,6 +25,7 @@ export class HttpUtil {
 
 
     public static processarErro(error: HttpErrorResponse) {
+        console.log(error);
         let mensagens: string[];
         if (error.error instanceof ProgressEvent) {
             mensagens = ['erro.conexao_servidor'];
