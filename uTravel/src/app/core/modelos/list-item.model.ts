@@ -1,9 +1,11 @@
 export class ListItem {
-    name: String;
-    id: String;
+    name: string;
+    id: string;
+    date: Date;
 
-    constructor(name: String, id: String) {
+    constructor(name: string, id: string, date: Date = new Date()) {
         this.name = name;
         this.id = id;
+        this.date = date;
     }
 }
