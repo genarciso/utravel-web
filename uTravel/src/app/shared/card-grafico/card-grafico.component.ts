@@ -33,5 +33,5 @@ export class CardGraficoComponent implements OnInit {
             ],
             title: { text: "Orçamento" }
         };
-
+    }
 }
