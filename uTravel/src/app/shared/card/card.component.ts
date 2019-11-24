@@ -9,4 +9,5 @@ import { ListItem } from '../../core/modelos/list-item.model';
 export class CardComponent {
     @Input() title: String;
     @Input() lista: Array<ListItem>;
+    @Input() action: Function = () => {};
 }
