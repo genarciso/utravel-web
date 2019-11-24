@@ -4,6 +4,7 @@ import { Restaurante } from "./restaurante.model";
 import { Passeio } from "./passeio.model";
 import { VeiculoAlugado } from "./veiculoAlugado.model";
 import { Reserva } from "./reserva.model";
+import { Passagem } from './passagem.model';
 
 export class Evento extends Entidade {
     titulo: string;
