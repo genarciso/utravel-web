@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
+import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker";
 
 @Component({
     selector: "app-restaurante",
@@ -7,20 +8,33 @@ import { ListItem } from "../../../core/modelos/list-item.model";
     styleUrls: ["./restaurante.component.scss"]
 })
 export class RestauranteComponent {
-    lista_restaurante: Array<ListItem> = [
-        { name: "Camarões", id: "123" },
-        { name: "Lotus japanese fusion", id: "456" },
-        { name: "Bar do suvaco", id: "789" }
-    ];
-    valor_previsto: number = 40;
-    valor_gasto: number = 120;
+    lista_restaurante: Array<ListItem>;
+    valor_previsto: number;
+    valor_gasto: number;
 
-    bsInlineValue = new Date();
-    bsInlineRangeValue: Date[];
-    maxDate = new Date();
+    dias_selecionados: DatepickerDateCustomClasses[];
 
     constructor() {
-        this.maxDate.setDate(this.maxDate.getDate() + 7);
-        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+        const now = new Date();
+        const twoDaysAhead = new Date();
+        twoDaysAhead.setDate(now.getDate() + 2);
+        const fourDaysAhead = new Date();
+        fourDaysAhead.setDate(now.getDate() + 4);
+
+        this.lista_restaurante = [
+            new ListItem("Camarões", "123", now),
+            new ListItem("Lotus japanese fusion", "456", twoDaysAhead),
+            new ListItem("Bar do suvaco", "789", fourDaysAhead)
+        ];
+
+        this.valor_previsto = 40;
+        this.valor_gasto = 120;
+
+        this.dias_selecionados = this.lista_restaurante.map(restaurante => ({
+            date: restaurante.date,
+            classes: ["bg-warning"]
+        }));
+
+        console.log(this.dias_selecionados);
     }
 }
