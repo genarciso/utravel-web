@@ -34,7 +34,5 @@ export class RestauranteComponent {
             date: restaurante.date,
             classes: ["bg-warning"]
         }));
-
-        console.log(this.dias_selecionados);
     }
 }
