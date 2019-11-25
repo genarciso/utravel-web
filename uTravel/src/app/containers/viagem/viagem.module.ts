@@ -9,14 +9,17 @@ import {ViagemComponent} from './viagem.component';
 import {AppModule} from "../../app.module";
 import {SharedModule} from "../../shared/shared.module";
 import {BsDatepickerModule, ModalModule} from 'ngx-bootstrap';
+import { FormRestaurante } from './restaurante/form-restaurante/form-restaurante.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
+        FormRestaurante,
         OrcamentoGeralComponent,
         RestauranteComponent,
         HospedagemComponent,
         LocomocaoComponent,
-        TurismoComponent
+        TurismoComponent,
     ],
     exports: [
         OrcamentoGeralComponent,
@@ -30,6 +33,7 @@ import {BsDatepickerModule, ModalModule} from 'ngx-bootstrap';
         SharedModule,
         BsDatepickerModule,
         ModalModule.forRoot(),
+        ReactiveFormsModule,
     ]
 })
 export class ViagemModule { }

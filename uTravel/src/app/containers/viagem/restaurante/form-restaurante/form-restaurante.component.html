@@ -1,0 +1,50 @@
+<ng-template #formRestauranteTemplate>
+    <div class="modal-header">
+        <h3 class="modal-title pull-left">Planeje sua ida ao restaurante!</h3>
+        <button
+            type="button"
+            class="close pull-right"
+            aria-label="Close"
+            (click)="fechar()"
+        >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form [formGroup]="formulario" (ngSubmit)="confirmar()">
+        <div class="modal-body">
+            <p class="text-muted d-block font-weight-semibold">
+                Escolha um restaurante:
+            </p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"
+                        ><label for="nomeRestaurante">Nome do Restaurante</label
+                    ></span>
+                </div>
+                <input
+                    name="nomeRestaurante"
+                    id="nomeRestaurante"
+                    [maxLength]="50"
+                    type="text"
+                    [ngClass]="(nomeInvalido)? 'form-control is-invalid' : 'form-control'"
+                    [(ngModel)]="restauranteDTO.nome"
+                    formControlName="nomeRestaurante"
+                    placeholder="Nome do Restaurante"
+                    required
+                />
+                <div *ngIf="nomeInvalido" class="invalid-feedback">
+                    geral.campo_obrigatorio
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="confirmar()">
+            Adicionar
+        </button>
+        <button type="button" class="btn btn-default" (click)="fechar()">
+            Cancelar
+        </button>
+    </div>
+</ng-template>

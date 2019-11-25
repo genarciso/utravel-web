@@ -4,7 +4,7 @@
             <app-card
                 [title]="'Restaurantes a serem visitados'"
                 [lista]="lista_restaurante"
-                [modal]="restauranteFormModal"
+                [action]="abrirFormRestaurante"
             ></app-card>
         </div>
         <div class="col-sm">
@@ -14,7 +14,6 @@
                 </div>
                 <div class="card-body">
                     <bs-datepicker-inline
-                        ngModel
                         bsDaterangepicker
                         [dateCustomClasses]="dias_selecionados"
                     ></bs-datepicker-inline>
@@ -32,101 +31,4 @@
     </div>
 </div>
 
-<div
-    bsModal
-    #restauranteFormModal="bs-modal"
-    class="modal fade"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="myModalLabel"
-    aria-hidden="true"
->
-    <div class="modal-dialog modal-lg modal-info" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="modal-title">Escolha um Restaurante</h6>
-                <button
-                    type="button"
-                    class="close"
-                    (click)="restauranteFormModal.hide()"
-                    aria-label="Close"
-                >
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-                <form [formGroup]="formulario" (ngSubmit)="adicionaNovoRestaurante()">
-                    <div class="modal-body">
-                        <p class="text-muted d-block font-weight-semibold">Planeje a sua ida ao restaurante!</p>
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><label for="nomeRestaurante"><i class="fa fa-user"></i></label></span>
-                            </div>
-                            <input name="nomeRestaurante"
-                                    id="nomeRestaurante"
-                                    [maxLength]="100"
-                                    type="text"
-                                    [ngClass]="(nomeInvalido)? 'form-control is-invalid' : 'form-control'"
-                                    [(ngModel)]="restaurante.nome"
-                                    formControlName="nomeRestaurante"
-                                    placeholder="Nome do restaurante"
-                                    required/>
-                            <div *ngIf="nomeInvalido" class="invalid-feedback">
-                                geral.campo_obrigatorio
-                            </div>
-                        </div>
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
-                            <input name="data"
-                                    id="data"
-                                    [maxLength]="50"
-                                    type="date"
-                                    class="form-control"
-                                    [(ngModel)]="restauranteDTO.data"
-                                    formControlName="data"
-                                    required
-                                    placeholder="Data prevista"
-                            />
-                            <div *ngIf="dataInvalida" class="invalid-feedback">
-                                geral.campo_obrigatorio
-                            </div>
-                        </div>
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
-                            <input name="valor"
-                                    id="valor"
-                                    [maxLength]="50"
-                                    type="number"
-                                    class="form-control"
-                                    [(ngModel)]="restauranteDTO.valor"
-                                    formControlName="valor"
-                                    required
-                                    placeholder="Valor previsto"
-                            />
-                            <div *ngIf="valorInvalido" class="invalid-feedback">
-                                geral.campo_obrigatorio
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            <div class="modal-footer">
-                <a class="btn btn-primary" (click)="adicionaNovoRestaurante()"
-                    >Adicionar</a
-                >
-                <button
-                    type="button"
-                    class="btn btn-secondary"
-                    (click)="restauranteFormModal.hide()"
-                >
-                    Cancelar
-                </button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
+<form-restaurante #formRestauranteModal></form-restaurante>
