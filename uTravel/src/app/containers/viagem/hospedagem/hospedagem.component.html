@@ -4,6 +4,7 @@
             <app-card
                 [title]="'Hotéis selecionados'"
                 [lista]="lista_hoteis"
+                [action]="abrirFormHospedagem"
             ></app-card>
         </div>
         <div class="col-sm">
@@ -29,3 +30,5 @@
         </div>
     </div>
 </div>
+
+<app-form-hospedagem #formHospedagemModal></app-form-hospedagem>

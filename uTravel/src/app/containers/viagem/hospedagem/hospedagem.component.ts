@@ -1,6 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
-import { DatepickerDateCustomClasses } from 'ngx-bootstrap/datepicker/models';
+import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker/models";
+import { FormHospedagemComponent } from "./form-hospedagem/form-hospedagem.component";
 
 @Component({
     selector: "app-hospedagem",
@@ -8,6 +9,9 @@ import { DatepickerDateCustomClasses } from 'ngx-bootstrap/datepicker/models';
     styleUrls: ["./hospedagem.component.scss"]
 })
 export class HospedagemComponent {
+    @ViewChild("formHospedagemModal", { static: false })
+    private form: FormHospedagemComponent;
+
     lista_hoteis: Array<ListItem>;
 
     valor_previsto: number;
@@ -36,4 +40,8 @@ export class HospedagemComponent {
             classes: ["bg-warning"]
         }));
     }
+
+    abrirFormHospedagem = () => {
+        this.form.abrir();
+    };
 }
