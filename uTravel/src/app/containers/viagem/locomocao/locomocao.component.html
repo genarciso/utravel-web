@@ -2,8 +2,9 @@
     <div class="row">
         <div class="col-sm">
             <app-card
-                [title]="'Carros alugados'"
-                [lista]="lista_carros"
+                [title]="'Como você vai se locomover'"
+                [lista]="lista_locomocao"
+                [action]="abrirFormLocomocao"
             ></app-card>
         </div>
         <div class="col-sm">
@@ -29,3 +30,5 @@
         </div>
     </div>
 </div>
+
+<form-locomocao #formLocomocaoModal></form-locomocao>

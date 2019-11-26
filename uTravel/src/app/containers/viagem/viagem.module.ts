@@ -11,6 +11,8 @@ import {SharedModule} from "../../shared/shared.module";
 import {BsDatepickerModule, ModalModule} from 'ngx-bootstrap';
 import { FormRestaurante } from './restaurante/form-restaurante/form-restaurante.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormLocomocaoComponent } from './locomocao/form-locomocao/form-locomocao.component';
+import { FormTurismoComponent } from './turismo/form-turismo/form-turismo.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
         HospedagemComponent,
         LocomocaoComponent,
         TurismoComponent,
+        FormLocomocaoComponent,
+        FormTurismoComponent,
     ],
     exports: [
         OrcamentoGeralComponent,

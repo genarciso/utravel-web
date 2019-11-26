@@ -34,11 +34,13 @@ export class RestauranteService {
                 localStorage.getItem(environment.chaveTokenAcessoLocalStorage)
         });
 
+        const date1 = "11/12/2019"
+        const date2 = "11/01/2020"
         const body = {
             "titulo": "viagem titulo",
             "objetivo": "viagem objetivo",
-            "dataInicio": 12345,
-            "dataFim": 123456
+            "dataInicio": date1,
+            "dataFim": date2
         };
 
         this.httpService

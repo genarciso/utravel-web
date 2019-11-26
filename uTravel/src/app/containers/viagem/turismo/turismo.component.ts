@@ -1,30 +1,51 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, TemplateRef, ViewChild, ViewChildren } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
+import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker";
+import { FormTurismo } from "./form-turismo/form-turismo.component";
+
+declare var $: any;
 
 @Component({
     selector: "app-turismo",
     templateUrl: "./turismo.component.html",
-    styleUrls: ["./turismo.component.scss"]
+    styleUrls: ["./turisco.component.scss"]
 })
-export class TurismoComponent {
-    titulo_card: String = "Passeios turísticos";
+export class TurismoComponent implements OnInit {
+    @ViewChild("formTurismoModal", { static: false })
+    private form: FormTurismo;
 
-    lista_turismo: Array<ListItem> = [
-        new ListItem("Passeio de Buggy", "123"),
-        new ListItem("Visita aos corais", "456"),
-        new ListItem("Show do Grafitão", "789"),
-        new ListItem("Visita gratuita ao Walfredo Gurgel", "012")
-    ];
+    lista_turismo: Array<ListItem>;
+    valor_previsto: number;
+    valor_gasto: number;
 
-    valor_previsto: number = 566;
-    valor_gasto: number = 200;
-
-    bsInlineValue = new Date();
-    bsInlineRangeValue: Date[];
-    maxDate = new Date();
+    dias_selecionados: DatepickerDateCustomClasses[];
 
     constructor() {
-        this.maxDate.setDate(this.maxDate.getDate() + 7);
-        this.bsInlineRangeValue = [this.bsInlineValue, this.maxDate];
+        const now = new Date();
+        const twoDaysAhead = new Date();
+        twoDaysAhead.setDate(now.getDate() + 2);
+        const fourDaysAhead = new Date();
+        fourDaysAhead.setDate(now.getDate() + 4);
+
+        this.lista_turismo = [
+            new ListItem("Camarões", "123", now),
+            new ListItem("Lotus japanese fusion", "456", twoDaysAhead),
+            new ListItem("Bar do suvaco", "789", fourDaysAhead)
+        ];
+
+        this.valor_previsto = 40;
+        this.valor_gasto = 120;
+
+        this.dias_selecionados = this.lista_turismo.map(Turismo => ({
+            date: Turismo.date,
+            classes: ["bg-warning"]
+        }));
+    }
+
+    ngOnInit() {
+    }
+
+    abrirFormTurismo = () => {
+        this.form.abrir();
     }
 }
