@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {ViagemComponent} from './viagem.component';
+import {ViagemComponent} from './viagem/viagem.component';
 
 @NgModule({
     imports: [

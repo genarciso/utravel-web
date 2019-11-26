@@ -46,7 +46,7 @@
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                    <a class="btn" [routerLink]="['/dashboard/viagem/']"><i class="icon-plus"></i> &nbsp;Nova viagem</a>
+                    <button class="btn" (click)="abrirForm()"><i class="icon-plus"></i> &nbsp;Nova viagem</button>
                 </div>
             </li>
             <li class="breadcrumb-menu d-md-down-none" style="margin-left: 0%;">
@@ -60,6 +60,7 @@
             <app-dashboard-viagem></app-dashboard-viagem>
         </div><!-- /.container-fluid -->
     </main>
+    <app-registrar-viagem #formViagem></app-registrar-viagem>
 </div>
 <app-footer>
     <span>uTravel &copy; 2019.</span>

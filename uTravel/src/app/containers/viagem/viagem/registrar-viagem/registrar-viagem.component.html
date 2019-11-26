@@ -1,0 +1,57 @@
+<div bsModal #formModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Cadastre uma nova viagem</h3>
+                <button type="button" class="close" (click)="formModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formulario" (ngSubmit)="salvar()">
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-pencil"></i></span>
+                            </div>
+                            <input name="titulo"
+                                   id="titulo"
+                                   [maxLength]="50"
+                                   type="text"
+                                   [ngClass]=" 'form-control'"
+                                   [(ngModel)]="viagem.titulo"
+                                   formControlName="titulo"
+                                   placeholder="Titulo"
+                                   required/>
+                            <div *ngIf="false" class="invalid-feedback">
+                                geral.campo_obrigatorio
+                            </div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-sticky-note "></i></span>
+                            </div>
+                            <input name="objetivo"
+                                   id="objetivo"
+                                   type="text"
+                                   class="form-control"
+                                   [(ngModel)]="viagem.objetivo"
+                                   formControlName="objetivo"
+                                   required
+                                   placeholder="Descrição"
+                            />
+                            <div *ngIf="false" class="invalid-feedback">
+                                geral.campo_obrigatorio
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" (click)="salvar()">Salvar</button>
+                <button type="button" class="btn btn-secondary" (click)="formModal.hide()">Cancelar</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

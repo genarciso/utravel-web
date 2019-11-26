@@ -17,7 +17,7 @@ import {TabsModule} from 'ngx-bootstrap/tabs';
 import {PaginaInicialModule} from './containers/pagina-inicial/pagina-inicial.module';
 import {DashboardViagemComponent} from './containers/default-layout/dashboard-viagem/dashboard-viagem.component';
 import {BsDatepickerModule, ModalModule, ProgressbarModule} from 'ngx-bootstrap';
-import {ViagemComponent} from './containers/viagem/viagem.component';
+import {ViagemComponent} from './containers/viagem/viagem/viagem.component';
 import {ViagemModule} from './containers/viagem/viagem.module';
 import {SharedModule} from './shared/shared.module';
 import {HighchartsChartModule} from 'highcharts-angular';
