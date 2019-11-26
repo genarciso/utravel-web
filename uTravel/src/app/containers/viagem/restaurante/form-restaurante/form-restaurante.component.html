@@ -27,11 +27,11 @@
                     [maxLength]="50"
                     type="text"
                     [ngClass]="
-                        (isNomeInvalido)
+                        isNomeInvalido
                             ? 'form-control is-invalid'
                             : 'form-control'
                     "
-                    [(ngModel)]="restauranteDTO.nome"
+                    [(ngModel)]="restauranteDTO.restauranteDTO.nomeRestaurante"
                     formControlName="nomeRestaurante"
                     placeholder="Nome"
                     required
@@ -50,9 +50,9 @@
                     name="dataIdaPrevista"
                     id="dataIdaPrevista"
                     [maxLength]="50"
-                    type="date"
+                    type="text"
                     [ngClass]="
-                        (isDataInvalida)
+                        isDataInvalida
                             ? 'form-control is-invalid'
                             : 'form-control'
                     "
@@ -77,7 +77,7 @@
                     [maxLength]="50"
                     type="number"
                     [ngClass]="
-                        (isValorGastoPrevistoInvalido)
+                        isValorGastoPrevistoInvalido
                             ? 'form-control is-invalid'
                             : 'form-control'
                     "
@@ -105,7 +105,9 @@
                     [maxLength]="50"
                     type="text"
                     class="form-control"
-                    [(ngModel)]="restauranteDTO.endereco.endereco"
+                    [(ngModel)]="
+                        restauranteDTO.restauranteDTO.enderecoDTO.endereco
+                    "
                     formControlName="endereco"
                     placeholder="Endereço"
                 />

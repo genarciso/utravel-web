@@ -1,10 +1,18 @@
-import EnderecoDTO from './endereco.dto';
+import EnderecoDTO from "./endereco.dto";
+
+class DTOInterno {
+    idRestaurante: number = 0;
+    nomeRestaurante: string = "";
+    enderecoDTO: EnderecoDTO = new EnderecoDTO();
+
+    constructor() {}
+}
 
 export default class RestauranteDTO {
-    name: string;
-    dataIdaPrevista: Date;
+    dataIdaPrevista: string;
     valorGastoPrevisto: number;
-    endereco: EnderecoDTO = new EnderecoDTO();
+
+    restauranteDTO: DTOInterno = new DTOInterno();
 
     constructor() {}
 }
