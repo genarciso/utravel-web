@@ -5,6 +5,8 @@ import { HttpService } from "../../../http/http.service";
 import { HttpUtil } from "../../../util/http.util";
 import RestauranteDTO from "../../../modelos/dto/restaurante.dto";
 import { Subject, Observable } from "rxjs";
+import { environment } from "../../../../../environments/environment";
+import { HttpHeaders } from "@angular/common/http";
 
 @Injectable({
     providedIn: "root"
@@ -24,21 +26,26 @@ export class RestauranteService {
     }
 
     public enviar(restauranteDTO: RestauranteDTO): void {
-        this._header = {
-            headers: HttpUtil.httpHeaders(),
-            type: "text"
+        const headers = new HttpHeaders({
+            // "Content-Encoding": "gzip, compress, deflate, identity, br",
+            "Content-Type": "application/json; charset=UTF-8",
+            Authorization:
+                "Bearer " +
+                localStorage.getItem(environment.chaveTokenAcessoLocalStorage)
+        });
+
+        const body = {
+            "titulo": "viagem titulo",
+            "objetivo": "viagem objetivo",
+            "dataInicio": 12345,
+            "dataFim": 123456
         };
 
-        const parametros = JSON.stringify({
-            titulo: "viagem titulo",
-            objetivo: "viagem objetivo",
-            dataInicio: `${Date.now()}`,
-            dataFim: `${Date.now() + 1}`
-        });
-
-        this.httpService.post("/viagem", parametros, this._header).subscribe(response => {
-            console.log(response);
-        });
+        this.httpService
+            .post("/viagem", body, HttpUtil.headers())
+            .subscribe(response => {
+                console.log(response);
+            });
 
         // this.httpService.post('/viagem/1/adicionar/restaurante', restauranteDTO, this._header)
         //     .subscribe(() => {
