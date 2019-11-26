@@ -2,8 +2,9 @@
     <div class="row">
         <div class="col-sm">
             <app-card
-                [title]="titulo_card"
-                [lista]="lista_turismo"
+                [title]="'Passeios que você quer fazer'"
+                [lista]="lista_passeio"
+                [action]="abrirFormTurismo"
             ></app-card>
         </div>
         <div class="col-sm">
@@ -12,7 +13,10 @@
                     <p>Agenda</p>
                 </div>
                 <div class="card-body">
-                    <bs-datepicker-inline [bsValue]="bsInlineValue"></bs-datepicker-inline>
+                    <bs-datepicker-inline
+                        bsDaterangepicker
+                        [dateCustomClasses]="dias_selecionados"
+                    ></bs-datepicker-inline>
                 </div>
             </div>
         </div>
@@ -26,3 +30,5 @@
         </div>
     </div>
 </div>
+
+<form-turismo #formTurismoModal></form-turismo>

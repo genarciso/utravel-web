@@ -1,0 +1,126 @@
+<ng-template #formRestauranteTemplate>
+    <div class="modal-header">
+        <h3 class="modal-title pull-left">Planeje sua ida ao restaurante!</h3>
+        <button
+            type="button"
+            class="close pull-right"
+            aria-label="Close"
+            (click)="fechar()"
+        >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form [formGroup]="formulario" (ngSubmit)="confirmar()">
+        <div class="modal-body">
+            <p class="text-muted d-block font-weight-semibold">
+                Diga qual restaurante irá:
+            </p>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-spoon"></i>
+                    </span>
+                </div>
+                <input
+                    name="nomeRestaurante"
+                    id="nomeRestaurante"
+                    [maxLength]="50"
+                    type="text"
+                    [ngClass]="
+                        isNomeInvalido
+                            ? 'form-control is-invalid'
+                            : 'form-control'
+                    "
+                    [(ngModel)]="restauranteDTO.restauranteDTO.nomeRestaurante"
+                    formControlName="nomeRestaurante"
+                    placeholder="Nome"
+                    required
+                />
+                <div *ngIf="isNomeInvalido" class="invalid-feedback">
+                    O nome do restaurante é obrigatório!
+                </div>
+            </div>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+                <input
+                    name="dataIdaPrevista"
+                    id="dataIdaPrevista"
+                    [maxLength]="50"
+                    type="text"
+                    [ngClass]="
+                        isDataInvalida
+                            ? 'form-control is-invalid'
+                            : 'form-control'
+                    "
+                    [(ngModel)]="restauranteDTO.dataIdaPrevista"
+                    formControlName="dataIdaPrevista"
+                    placeholder="Data"
+                    required
+                />
+                <div *ngIf="isDataInvalida" class="invalid-feedback">
+                    A data prevista para visita é obrigatória!
+                </div>
+            </div>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-money"></i>
+                    </span>
+                </div>
+                <input
+                    name="valorGastoPrevisto"
+                    id="valorGastoPrevisto"
+                    [maxLength]="50"
+                    type="number"
+                    [ngClass]="
+                        isValorGastoPrevistoInvalido
+                            ? 'form-control is-invalid'
+                            : 'form-control'
+                    "
+                    [(ngModel)]="restauranteDTO.valorGastoPrevisto"
+                    formControlName="valorGastoPrevisto"
+                    placeholder="Previsão de gastos"
+                    required
+                />
+                <div
+                    *ngIf="isValorGastoPrevistoInvalido"
+                    class="invalid-feedback"
+                >
+                    O valor previsto para ser gasto é obrigatório!
+                </div>
+            </div>
+            <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-map-marker"></i>
+                    </span>
+                </div>
+                <input
+                    name="endereco"
+                    id="endereco"
+                    [maxLength]="50"
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="
+                        restauranteDTO.restauranteDTO.enderecoDTO.endereco
+                    "
+                    formControlName="endereco"
+                    placeholder="Endereço"
+                />
+            </div>
+        </div>
+    </form>
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" (click)="confirmar()">
+            Adicionar
+        </button>
+        <button type="button" class="btn btn-default" (click)="fechar()">
+            Cancelar
+        </button>
+    </div>
+</ng-template>
