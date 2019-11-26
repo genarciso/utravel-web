@@ -14,13 +14,16 @@ export class HttpUtil {
     }
 
     public static httpHeaders() {
-        const headersParams = {'Content-Type': 'application/json;charset=utf-8'};
-        headersParams['Accept'] = 'application/json';
+        const headersParams = {
+            'Content-Type': 'application/json; charset=UTF-8',
+            'Accept': 'application/json; charset=UTF-8'
+        };
+
         const token: string = localStorage.getItem(environment.chaveTokenAcessoLocalStorage);
         if (token) {
             headersParams['Authorization'] = 'Bearer ' + token;
         }
-        return  new HttpHeaders(headersParams);
+        return new HttpHeaders(headersParams);
     }
 
 

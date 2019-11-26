@@ -1,18 +1,55 @@
-import { Injectable } from '@angular/core';
-import {AbstractCrudService} from '../../../http/abstract-crud.service';
-import {Restaurante} from '../../../modelos/dominio/restaurante.model';
-import {HttpService} from '../../../http/http.service';
+import { Injectable } from "@angular/core";
+import { AbstractCrudService } from "../../../http/abstract-crud.service";
+import { Restaurante } from "../../../modelos/dominio/restaurante.model";
+import { HttpService } from "../../../http/http.service";
+import { HttpUtil } from "../../../util/http.util";
+import RestauranteDTO from "../../../modelos/dto/restaurante.dto";
+import { Subject, Observable } from "rxjs";
+import { environment } from "../../../../../environments/environment";
+import { HttpHeaders } from "@angular/common/http";
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: "root"
 })
-export class RestauranteService extends AbstractCrudService<Restaurante> {
+export class RestauranteService {
+    private aoEnviarEvento: Subject<void> = new Subject();
+    private _header: object;
 
-    constructor(protected httpService: HttpService) {
-        super(httpService);
-    }
+    constructor(private httpService: HttpService) {}
 
     getUrlBase(): string {
-        return 'restaurante';
+        return "restaurante";
+    }
+
+    public aoEnviar(): Observable<void> {
+        return this.aoEnviarEvento.asObservable();
+    }
+
+    public enviar(restauranteDTO: RestauranteDTO): void {
+        const headers = new HttpHeaders({
+            // "Content-Encoding": "gzip, compress, deflate, identity, br",
+            "Content-Type": "application/json; charset=UTF-8",
+            Authorization:
+                "Bearer " +
+                localStorage.getItem(environment.chaveTokenAcessoLocalStorage)
+        });
+
+        const body = {
+            "titulo": "viagem titulo",
+            "objetivo": "viagem objetivo",
+            "dataInicio": 12345,
+            "dataFim": 123456
+        };
+
+        this.httpService
+            .post("/viagem", body, HttpUtil.headers())
+            .subscribe(response => {
+                console.log(response);
+            });
+
+        // this.httpService.post('/viagem/1/adicionar/restaurante', restauranteDTO, this._header)
+        //     .subscribe(() => {
+        //         this.aoEnviarEvento.next();
+        //     });
     }
 }

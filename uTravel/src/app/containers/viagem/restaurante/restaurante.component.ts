@@ -1,13 +1,19 @@
-import { Component, OnInit, TemplateRef } from "@angular/core";
+import { Component, OnInit, TemplateRef, ViewChild, ViewChildren } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
 import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker";
+import { FormRestaurante } from "./form-restaurante/form-restaurante.component";
+
+declare var $: any;
 
 @Component({
     selector: "app-restaurante",
     templateUrl: "./restaurante.component.html",
     styleUrls: ["./restaurante.component.scss"]
 })
-export class RestauranteComponent {
+export class RestauranteComponent implements OnInit {
+    @ViewChild("formRestauranteModal", { static: false })
+    private form: FormRestaurante;
+
     lista_restaurante: Array<ListItem>;
     valor_previsto: number;
     valor_gasto: number;
@@ -34,5 +40,12 @@ export class RestauranteComponent {
             date: restaurante.date,
             classes: ["bg-warning"]
         }));
+    }
+
+    ngOnInit() {
+    }
+
+    abrirFormRestaurante = () => {
+        this.form.abrir();
     }
 }

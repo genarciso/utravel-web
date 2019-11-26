@@ -5,7 +5,6 @@ import {HttpService} from '../http.service';
 import {Router} from '@angular/router';
 import {environment} from '../../../../environments/environment';
 import {isNullOrUndefined} from 'util';
-import {HttpUtil} from '../../util/http.util';
 
 @Injectable({
     providedIn: 'root'
@@ -37,11 +36,30 @@ export class AutenticacaoService {
     private serializarUsuario(response: any): Usuario {
         return new UsuarioBuilder()
             .comID(response.id)
-            .comUsuario(response.usuario)
-            .comSenha(response.senha)
+            .comLogin(response.login)
+            .comEmail(response.email)
+            .comNome(response.nome)
             .construir();
     }
 
+    public entrar(login: string, senha: string): void {
+
+        this.httpService.post('/usuario/login', {email: login, senha: senha})
+            .subscribe(response => {
+                localStorage.setItem(environment.chaveTokenAcessoLocalStorage, response.token);
+                this.salvarUsuario(this.serializarUsuario(response));
+                this.aoEntrarEvento.next(this._usuarioLogado);
+                this.router.navigateByUrl('dashboard/');
+            });
+    }
+
+    public sair(): void {
+        const usuario = this._usuarioLogado;
+        localStorage.clear();
+        this._usuarioLogado = null;
+        this.aoSairEvento.next(usuario);
+        this.router.navigateByUrl('/');
+    }
 
     public aoEntrar(): Observable<Usuario> {
         return this.aoEntrarEvento.asObservable();
@@ -59,34 +77,6 @@ export class AutenticacaoService {
         return this.aoEncontrarUsuarioIncompletoEvento.asObservable();
     }
 
-    public entrar(login: string, senha: string): void {
-        this._header = {
-            headers: HttpUtil.httpHeaders(),
-            observe: 'response',
-            responseType: 'text'
-        };
-
-        this.httpService.post('/usuario/login', {email: login, senha: senha}, this._header)
-            .subscribe(response => {
-                let token;
-                if (response.token === undefined) {
-                    token = response.slice(7);
-                }
-                localStorage.setItem(environment.chaveTokenAcessoLocalStorage, response.token ? response.token : token);
-                this.salvarUsuario(this.serializarUsuario(response));
-                this.aoEntrarEvento.next(this._usuarioLogado);
-                this.router.navigateByUrl('dashboard/');
-            });
-    }
-
-    public sair(): void {
-        const usuario = this._usuarioLogado;
-        localStorage.clear();
-        this._usuarioLogado = null;
-        this.aoSairEvento.next(usuario);
-        this.router.navigateByUrl('/');
-    }
-
     public isLogged(): boolean {
         return !isNullOrUndefined(this._usuarioLogado);
     }
@@ -98,6 +88,5 @@ export class AutenticacaoService {
     get tokenAcesso(): string {
         return localStorage.getItem(environment.chaveTokenAcessoLocalStorage);
     }
-
 
 }

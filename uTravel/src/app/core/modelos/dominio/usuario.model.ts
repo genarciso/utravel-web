@@ -1,16 +1,30 @@
 import {Entidade, EntidadeBuilder} from './entidade.model';
 
 export class Usuario extends Entidade {
-    usuario: string;
+    login: string;
     senha: string;
+    nome: string;
+    email: string;
 }
 
 export class UsuarioBuilder extends EntidadeBuilder<Usuario> {
-    usuario: string;
+    login: string;
     senha: string;
+    nome: string;
+    email: string;
 
-    comUsuario(valor: string): UsuarioBuilder {
-        this.usuario = valor;
+    comLogin(valor: string): UsuarioBuilder {
+        this.login = valor;
+        return this;
+    }
+
+    comNome(valor: string): UsuarioBuilder {
+        this.nome = valor;
+        return this;
+    }
+
+    comEmail(valor: string): UsuarioBuilder {
+        this.email = valor;
         return this;
     }
 
@@ -22,8 +36,10 @@ export class UsuarioBuilder extends EntidadeBuilder<Usuario> {
     construir(): Usuario {
         const instancia = super.construir(Usuario);
 
-        instancia.usuario = this.usuario;
+        instancia.login = this.login;
         instancia.senha = this.senha;
+        instancia.nome = this.nome;
+        instancia.email = this.email;
 
         return instancia;
     }
