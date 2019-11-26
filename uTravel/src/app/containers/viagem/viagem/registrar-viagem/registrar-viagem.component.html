@@ -1,9 +1,9 @@
 <div bsModal #formModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-info" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h6 class="modal-title">Minha lua de mel dos sonhos</h6>
+                <h3 class="modal-title">Cadastre uma nova viagem</h3>
                 <button type="button" class="close" (click)="formModal.hide()" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -11,10 +11,9 @@
             <div class="modal-body">
                 <form [formGroup]="formulario" (ngSubmit)="salvar()">
                     <div class="modal-body">
-                        <p class="text-muted d-block font-weight-semibold">Entre com sua conta e a sua senha</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                <span class="input-group-text"><i class="fa fa-pencil"></i></span>
                             </div>
                             <input name="titulo"
                                    id="titulo"
@@ -31,15 +30,14 @@
                         </div>
                         <div class="input-group mb-4">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-lock "></i></span>
+                                <span class="input-group-text"><i class="fa fa-sticky-note "></i></span>
                             </div>
-                            <input name="descricao"
-                                   id="descricao"
-                                   [maxLength]="50"
+                            <input name="objetivo"
+                                   id="objetivo"
                                    type="text"
                                    class="form-control"
                                    [(ngModel)]="viagem.objetivo"
-                                   formControlName="descricao"
+                                   formControlName="objetivo"
                                    required
                                    placeholder="Descrição"
                             />

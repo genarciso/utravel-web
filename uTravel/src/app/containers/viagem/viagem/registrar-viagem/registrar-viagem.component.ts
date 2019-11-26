@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Viagem} from '../../../../core/modelos/dominio/viagem.model';
 import {BsModalService} from 'ngx-bootstrap';
 import {Router} from '@angular/router';
@@ -23,9 +23,22 @@ export class RegistrarViagemComponent implements OnInit {
         private formBuilder: FormBuilder,
         private router: Router,
         public autenticacaoService: AutenticacaoService
-    ) { }
+    ) {
+        this.viagem = new Viagem();
+        modalService.onHidden.subscribe(() => {
+            this.formularioEnviado = false;
+        });
+    }
 
     ngOnInit() {
+        this.formulario = this.formBuilder.group({
+            titulo: [null, [Validators.required]],
+            objetivo: [null, [Validators.required]],
+
+        });
+
+        this.modalService.onShown.subscribe(() => {
+        });
     }
 
     abrirForm(): void {

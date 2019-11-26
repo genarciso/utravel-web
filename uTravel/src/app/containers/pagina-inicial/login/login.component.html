@@ -13,13 +13,13 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fa fa-user"></i></span>
                 </div>
-                <input name="usuario"
-                       id="usuario"
+                <input name="login"
+                       id="login"
                        [maxLength]="50"
                        type="text"
                        [ngClass]="(loginInvalido)? 'form-control is-invalid' : 'form-control'"
                        [(ngModel)]="login.login"
-                       formControlName="usuario"
+                       formControlName="login"
                        placeholder="Usuário"
                        required/>
                 <div *ngIf="loginInvalido" class="invalid-feedback">
