@@ -4,7 +4,7 @@ import {Routes, RouterModule} from '@angular/router';
 // Import Containers
 import {DefaultLayoutComponent} from './containers';
 import {PaginaInicialComponent} from './containers/pagina-inicial/pagina-inicial.component';
-import {ViagemComponent} from "./containers/viagem/viagem.component";
+import {ViagemComponent} from "./containers/viagem/viagem/viagem.component";
 
 export const routes: Routes = [
     {

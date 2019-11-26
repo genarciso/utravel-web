@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { OrcamentoGeralComponent } from './orcamento-geral/orcamento-geral.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { HospedagemComponent } from './hospedagem/hospedagem.component';
-// import { LocomocaoComponent } from './locomocao/locomocao.component';
+import { LocomocaoComponent } from './locomocao/locomocao.component';
 import { TurismoComponent } from './turismo/turismo.component';
-import {ViagemComponent} from './viagem.component';
+import {ViagemComponent} from './viagem/viagem.component';
 import {AppModule} from "../../app.module";
 import {SharedModule} from "../../shared/shared.module";
 import {BsDatepickerModule, ModalModule} from 'ngx-bootstrap';
+import { RegistrarViagemComponent } from './viagem/registrar-viagem/registrar-viagem.component';
 import { FormRestaurante } from './restaurante/form-restaurante/form-restaurante.component';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { FormLocomocaoComponent } from './locomocao/form-locomocao/form-locomocao.component';
@@ -21,8 +22,10 @@ import { FormHospedagemComponent } from './hospedagem/form-hospedagem/form-hospe
         OrcamentoGeralComponent,
         RestauranteComponent,
         HospedagemComponent,
-        // LocomocaoComponent,
+        LocomocaoComponent,
         TurismoComponent,
+        RegistrarViagemComponent,
+        // LocomocaoComponent,
         // FormLocomocaoComponent,
         FormTurismoComponent,
         FormHospedagemComponent,
@@ -32,7 +35,8 @@ import { FormHospedagemComponent } from './hospedagem/form-hospedagem/form-hospe
         RestauranteComponent,
         HospedagemComponent,
         // LocomocaoComponent,
-        TurismoComponent
+        TurismoComponent,
+        RegistrarViagemComponent
     ],
     imports: [
         CommonModule,
