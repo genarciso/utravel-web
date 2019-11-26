@@ -31,7 +31,7 @@
                         ? 'form-control is-invalid'
                         : 'form-control'
                 "
-                [(ngModel)]="TurismoDTO.data"
+                [(ngModel)]="turismoDTO.data"
                 formControlName="dataTurismo"
                 placeholder="Data"
                 required
@@ -40,83 +40,83 @@
                 A data é obrigatória!
             </div>
         </div>
-          <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                  <span class="input-group-text">
-                      <i class="fa fa-spoon"></i>
-                  </span>
-              </div>
-              <input
-                  name="nomeTurismo"
-                  id="nomeTurismo"
-                  [maxLength]="50"
-                  type="text"
-                  [ngClass]="
-                      (isNomeInvalido)
-                          ? 'form-control is-invalid'
-                          : 'form-control'
-                  "
-                  [(ngModel)]="TurismoDTO.nome"
-                  formControlName="nomeTurismo"
-                  placeholder="Nome"
-                  required
-              />
-              <div *ngIf="isNomeInvalido" class="invalid-feedback">
-                  O nome do Turismo é obrigatório!
-              </div>
+        <div class="input-group mb-4">
+          <div class="input-group-prepend">
+              <span class="input-group-text">
+                  <i class="fa fa-money"></i>
+              </span>
+          </div>
+          <input
+              name="valorGastoPrevisto"
+              id="valorGastoPrevisto"
+              [maxLength]="50"
+              type="number"
+              [ngClass]="
+                  (isValorGastoPrevistoInvalido)
+                      ? 'form-control is-invalid'
+                      : 'form-control'
+              "
+              [(ngModel)]="turismoDTO.valorGastoPrevisto"
+              formControlName="valorGastoPrevisto"
+              placeholder="Previsão de gastos"
+              required
+          />
+          <div
+              *ngIf="isValorGastoPrevistoInvalido"
+              class="invalid-feedback"
+          >
+              O valor previsto para ser gasto é obrigatório!
+          </div>
+        </div>
+        <div class="input-group mb-4">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fa fa-spoon"></i>
+                </span>
+            </div>
+            <input
+                name="nomeTurismo"
+                id="nomeTurismo"
+                [maxLength]="50"
+                type="text"
+                [ngClass]="
+                    (isNomeInvalido)
+                        ? 'form-control is-invalid'
+                        : 'form-control'
+                "
+                [(ngModel)]="turismoDTO.nome"
+                formControlName="nomeTurismo"
+                placeholder="Nome"
+                required
+            />
+            <div *ngIf="isNomeInvalido" class="invalid-feedback">
+                O nome do passeio é obrigatório!
+            </div>
           </div>
           <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                  <span class="input-group-text">
-                      <i class="fa fa-calendar"></i>
-                  </span>
-              </div>
-              <input
-                  name="dataIdaPrevista"
-                  id="dataIdaPrevista"
-                  [maxLength]="50"
-                  type="date"
-                  [ngClass]="
-                      (isDataInvalida)
-                          ? 'form-control is-invalid'
-                          : 'form-control'
-                  "
-                  [(ngModel)]="TurismoDTO.dataIdaPrevista"
-                  formControlName="dataIdaPrevista"
-                  placeholder="Data"
-                  required
-              />
-              <div *ngIf="isDataInvalida" class="invalid-feedback">
-                  A data prevista para visita é obrigatória!
-              </div>
-          </div>
-          <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                  <span class="input-group-text">
-                      <i class="fa fa-money"></i>
-                  </span>
-              </div>
-              <input
-                  name="valorGastoPrevisto"
-                  id="valorGastoPrevisto"
-                  [maxLength]="50"
-                  type="number"
-                  [ngClass]="
-                      (isValorGastoPrevistoInvalido)
-                          ? 'form-control is-invalid'
-                          : 'form-control'
-                  "
-                  [(ngModel)]="TurismoDTO.valorGastoPrevisto"
-                  formControlName="valorGastoPrevisto"
-                  placeholder="Previsão de gastos"
-                  required
-              />
-              <div
-                  *ngIf="isValorGastoPrevistoInvalido"
-                  class="invalid-feedback"
-              >
-                  O valor previsto para ser gasto é obrigatório!
-              </div>
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fa fa-spoon"></i>
+                </span>
+            </div>
+            <input
+                name="tipoTurismo"
+                id="tipoTurismo"
+                [maxLength]="50"
+                type="text"
+                [ngClass]="
+                    (isTipoInvalido)
+                        ? 'form-control is-invalid'
+                        : 'form-control'
+                "
+                [(ngModel)]="turismoDTO.tipo"
+                formControlName="tipoTurismo"
+                placeholder="Tipo do passeio"
+                required
+            />
+            <div *ngIf="isTipoInvalido" class="invalid-feedback">
+                O tipo do passeio é obrigatório!
+            </div>
           </div>
           <div class="input-group mb-4">
               <div class="input-group-prepend">
@@ -130,7 +130,7 @@
                   [maxLength]="50"
                   type="text"
                   class="form-control"
-                  [(ngModel)]="TurismoDTO.endereco.endereco"
+                  [(ngModel)]="turismoDTO.turismoDTO.enderecoDTO.endereco"
                   formControlName="endereco"
                   placeholder="Endereço"
               />

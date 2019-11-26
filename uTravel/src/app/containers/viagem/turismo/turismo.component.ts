@@ -1,18 +1,18 @@
 import { Component, OnInit, TemplateRef, ViewChild, ViewChildren } from "@angular/core";
 import { ListItem } from "../../../core/modelos/list-item.model";
 import { DatepickerDateCustomClasses } from "ngx-bootstrap/datepicker";
-import { FormTurismo } from "./form-turismo/form-turismo.component";
+import { FormTurismoComponent } from "./form-turismo/form-turismo.component";
 
 declare var $: any;
 
 @Component({
     selector: "app-turismo",
     templateUrl: "./turismo.component.html",
-    styleUrls: ["./turisco.component.scss"]
+    styleUrls: ["./turismo.component.scss"]
 })
 export class TurismoComponent implements OnInit {
     @ViewChild("formTurismoModal", { static: false })
-    private form: FormTurismo;
+    private form: FormTurismoComponent;
 
     lista_turismo: Array<ListItem>;
     valor_previsto: number;
