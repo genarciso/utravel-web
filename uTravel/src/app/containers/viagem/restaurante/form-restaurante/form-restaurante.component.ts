@@ -1,14 +1,8 @@
 import { Component, OnInit, TemplateRef, ViewChild } from "@angular/core";
 import { BsModalRef, BsModalService } from "ngx-bootstrap";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { Router } from "@angular/router";
-import { Restaurante } from '../../../../core/modelos/dominio/restaurante.model';
-
-class RestauranteDTO {
-    dataIdaPrevista: Date;
-    valorGastoPrevisto: number;
-    nome: string;
-}
+import RestauranteDTO from "../../../../core/modelos/dto/restaurante.dto";
+import { RestauranteService } from "../../../../core/servicos/crud/restaurante/restaurante.service";
 
 @Component({
     selector: "form-restaurante",
@@ -27,7 +21,8 @@ export class FormRestaurante implements OnInit {
 
     constructor(
         private modalService: BsModalService,
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private restauranteService: RestauranteService
     ) {
         this.restauranteDTO = new RestauranteDTO();
 
@@ -40,14 +35,32 @@ export class FormRestaurante implements OnInit {
         this.formulario = this.formBuilder.group({
             nomeRestaurante: [null, [Validators.required]],
             dataIdaPrevista: [null, [Validators.required]],
-            valorGastoPrevisto: [null, [Validators.required]]
+            valorGastoPrevisto: [null, [Validators.required]],
+            endereco: [null]
         });
 
         this.modalService.onShown.subscribe(() => {});
     }
 
-    get nomeInvalido(): boolean {
-        return this.formularioEnviado && this.formulario.get('nomeRestaurante').invalid;
+    get isNomeInvalido(): boolean {
+        return (
+            this.formularioEnviado &&
+            this.formulario.get("nomeRestaurante").invalid
+        );
+    }
+
+    get isDataInvalida(): boolean {
+        return (
+            this.formularioEnviado &&
+            this.formulario.get("dataIdaPrevista").invalid
+        );
+    }
+
+    get isValorGastoPrevistoInvalido(): boolean {
+        return (
+            this.formularioEnviado &&
+            this.formulario.get("valorGastoPrevisto").invalid
+        );
     }
 
     abrir() {
@@ -59,10 +72,26 @@ export class FormRestaurante implements OnInit {
     }
 
     fechar() {
+        this.limparForm();
+        this.formularioEnviado = false;
         this.modal.hide();
     }
 
     confirmar() {
-        console.log("formulario enviado", this.restauranteDTO);
+        this.formularioEnviado = true;
+        if (this.formulario.status !== "INVALID") {
+            this.restauranteService.enviar(this.restauranteDTO);
+            this.restauranteService.aoEnviar().subscribe(() => {
+                this.modal.hide();
+                this.limparForm();
+            });
+        }
+    }
+
+    limparForm() {
+        this.formulario.get("nomeRestaurante").setValue(null);
+        this.formulario.get("dataIdaPrevista").setValue(null);
+        this.formulario.get("valorGastoPrevisto").setValue(null);
+        this.formulario.get("endereco").setValue(null);
     }
 }

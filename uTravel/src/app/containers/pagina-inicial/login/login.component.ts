@@ -64,6 +64,5 @@ export class LoginComponent implements OnInit {
             this.modal.hide();
             this.router.navigate(['/dashboard']);
         });
-
     }
 }
