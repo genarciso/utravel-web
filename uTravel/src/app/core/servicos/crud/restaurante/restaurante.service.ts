@@ -13,7 +13,6 @@ import { HttpHeaders } from "@angular/common/http";
 })
 export class RestauranteService {
     private aoEnviarEvento: Subject<void> = new Subject();
-    private _header: object;
 
     constructor(private httpService: HttpService) {}
 
@@ -25,33 +24,10 @@ export class RestauranteService {
         return this.aoEnviarEvento.asObservable();
     }
 
-    public enviar(restauranteDTO: RestauranteDTO): void {
-        const headers = new HttpHeaders({
-            // "Content-Encoding": "gzip, compress, deflate, identity, br",
-            "Content-Type": "application/json; charset=UTF-8",
-            Authorization:
-                "Bearer " +
-                localStorage.getItem(environment.chaveTokenAcessoLocalStorage)
-        });
-
-        const date1 = "11/12/2019"
-        const date2 = "11/01/2020"
-        const body = {
-            "titulo": "viagem titulo",
-            "objetivo": "viagem objetivo",
-            "dataInicio": date1,
-            "dataFim": date2
-        };
-
-        this.httpService
-            .post("/viagem", body, HttpUtil.headers())
-            .subscribe(response => {
-                console.log(response);
+    public enviar(restauranteDTO: RestauranteDTO, viagemId: number): void {
+        this.httpService.post(`/viagem/${viagemId}/adicionar/restaurante`, restauranteDTO)
+            .subscribe(() => {
+                this.aoEnviarEvento.next();
             });
-
-        // this.httpService.post('/viagem/1/adicionar/restaurante', restauranteDTO, this._header)
-        //     .subscribe(() => {
-        //         this.aoEnviarEvento.next();
-        //     });
     }
 }

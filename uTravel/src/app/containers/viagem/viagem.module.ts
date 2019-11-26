@@ -13,6 +13,7 @@ import { FormRestaurante } from './restaurante/form-restaurante/form-restaurante
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormLocomocaoComponent } from './locomocao/form-locomocao/form-locomocao.component';
 import { FormTurismoComponent } from './turismo/form-turismo/form-turismo.component';
+import { FormHospedagemComponent } from './hospedagem/form-hospedagem/form-hospedagem.component';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { FormTurismoComponent } from './turismo/form-turismo/form-turismo.compon
         TurismoComponent,
         FormLocomocaoComponent,
         FormTurismoComponent,
+        FormHospedagemComponent,
     ],
     exports: [
         OrcamentoGeralComponent,

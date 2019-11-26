@@ -80,7 +80,7 @@ export class FormRestaurante implements OnInit {
     confirmar() {
         this.formularioEnviado = true;
         if (this.formulario.status !== "INVALID") {
-            this.restauranteService.enviar(this.restauranteDTO);
+            this.restauranteService.enviar(this.restauranteDTO, 3);
             this.restauranteService.aoEnviar().subscribe(() => {
                 this.modal.hide();
                 this.limparForm();
