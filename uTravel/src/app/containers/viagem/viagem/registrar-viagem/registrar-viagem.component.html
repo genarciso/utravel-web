@@ -19,13 +19,17 @@
                                    id="titulo"
                                    [maxLength]="50"
                                    type="text"
-                                   [ngClass]=" 'form-control'"
-                                   [(ngModel)]="viagem.titulo"
+                                   [ngClass]="
+                                        isCampoInvalido('titulo')
+                                            ? 'form-control is-invalid'
+                                            : 'form-control'
+                                    "
+                                   [(ngModel)]="viagemDTO.titulo"
                                    formControlName="titulo"
                                    placeholder="Titulo"
                                    required/>
-                            <div *ngIf="false" class="invalid-feedback">
-                                geral.campo_obrigatorio
+                            <div *ngIf="isCampoInvalido('titulo')" class="invalid-feedback">
+                                Diga o nome da viagem!
                             </div>
                         </div>
                         <div class="input-group mb-4">
@@ -35,14 +39,68 @@
                             <input name="objetivo"
                                    id="objetivo"
                                    type="text"
-                                   class="form-control"
-                                   [(ngModel)]="viagem.objetivo"
+                                   [(ngModel)]="viagemDTO.objetivo"
+                                   [ngClass]="
+                                        isCampoInvalido('objetivo')
+                                            ? 'form-control is-invalid'
+                                            : 'form-control'
+                                   "
                                    formControlName="objetivo"
                                    required
                                    placeholder="Descrição"
                             />
-                            <div *ngIf="false" class="invalid-feedback">
-                                geral.campo_obrigatorio
+                            <div *ngIf="isCampoInvalido('objetivo')" class="invalid-feedback">
+                                É necessário informar o objetivo da viagem!
+                            </div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </div>
+                            <input
+                                name="dataInicio"
+                                id="dataInicio"
+                                [maxLength]="50"
+                                type="text"
+                                [ngClass]="
+                                    isCampoInvalido('dataInicio')
+                                        ? 'form-control is-invalid'
+                                        : 'form-control'
+                                "
+                                [(ngModel)]="viagemDTO.dataInicio"
+                                formControlName="dataInicio"
+                                placeholder="Data início"
+                                required
+                            />
+                            <div *ngIf="isCampoInvalido('dataInicio')" class="invalid-feedback">
+                                A data inicial da viagem é obrigatória!
+                            </div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </div>
+                            <input
+                                name="dataFim"
+                                id="dataFim"
+                                [maxLength]="50"
+                                type="text"
+                                [ngClass]="
+                                    isCampoInvalido('dataFim')
+                                        ? 'form-control is-invalid'
+                                        : 'form-control'
+                                "
+                                [(ngModel)]="viagemDTO.dataFim"
+                                formControlName="dataFim"
+                                placeholder="Data"
+                                required
+                            />
+                            <div *ngIf="isCampoInvalido('dataFim')" class="invalid-feedback">
+                                A data prevista para o final da viagem é obrigatória!
                             </div>
                         </div>
                     </div>
@@ -50,7 +108,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" (click)="salvar()">Salvar</button>
-                <button type="button" class="btn btn-secondary" (click)="formModal.hide()">Cancelar</button>
+                <button type="button" class="btn btn-secondary" (click)="fecharForm()">Cancelar</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

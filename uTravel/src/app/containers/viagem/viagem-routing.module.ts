@@ -6,15 +6,10 @@ import {ViagemComponent} from './viagem/viagem.component';
     imports: [
         RouterModule.forRoot([
             {
-                path: '',
-                pathMatch: 'full',
-                redirectTo: 'inicial'
-            },
-            {
-                path: 'inicial',
+                path: '/:id',
                 component: ViagemComponent,
                 data: {title : 'Viagem'}
-            },
+            }
         ])
     ],
     exports: [RouterModule]
