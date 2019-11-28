@@ -35,7 +35,7 @@ export abstract class AbstractCrudService<T extends Entidade> {
     }
 
     public todos(): Observable<any> {
-        return this.httpService.get(this.getUrlBase() + "/all");
+        return this.httpService.get(this.getUrlBase());
     }
 
     public getUrlBaseComId(id: number): string {

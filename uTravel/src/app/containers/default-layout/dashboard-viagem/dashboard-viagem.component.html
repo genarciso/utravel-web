@@ -1,61 +1,17 @@
 <div class="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="card border-success">
-            <div class="card-header">
-                Viagem Feita<span class="badge badge-success float-right">Concluida</span>
-                <button class="btn btn-default"><i
-                    class="icon-eye" (click)="showModal.show()"></i></button>
-                <button class="btn btn-default"><i class="icon-share"></i></button>
-                <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
-                    class="icon-trash"></i></button>
-            </div>
-            <div class="card-body">
-                <b>Origem:</b> Natal, RN, Brasil <br/>
-                <b>Destino:</b> Londres, Inglaterra <br/>
-                <b>Data de inicio e fim :</b> 01/01/2019 até 15/02/2019 <br/>
-                <b>Resumo da viagem :</b> Essa viagem foi incrivel, conheci diversos lugares e os guardinhas da rainha!! <br/>
-            </div>
-        </div>
-    </div><!--/.col-->
-    <div class="col-sm-6 col-md-4">
-        <div class="card border-primary">
-            <div class="card-header">
-                Viagem em execução <span class="badge badge-primary float-right">Em andamento</span>
-                <button class="btn btn-default"><i
-                    class="icon-eye"></i></button>
-                <button class="btn btn-default"><i
-                    class="icon-pencil"></i></button>
-                <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
-                    class="icon-trash"></i></button>
-            </div>
-            <div class="card-body">
-                <b>Origem:</b> Natal, RN, Brasil <br/>
-                <b>Destino:</b> Quebec, Canadá <br/>
-                <b>Data de inicio e fim :</b> 01/06/2019 até 01/07/2019 <br/>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="card border-warning">
-            <div class="card-header">
-                Viagem a ser executada <span class="badge badge-warning float-right">Iniciada</span>
-                <button class="btn btn-default"><i
-                    class="icon-eye"></i></button>
-                <button class="btn btn-default"><i
-                    class="icon-pencil"></i></button>
-                <button class="btn btn-default mr-1" data-toggle="modal" (click)="dangerModal.show()"><i
-                    class="icon-trash"></i></button>
-            </div>
-            <div class="card-body">
-                <div class="card-body">
-                    <b>Origem:</b> Natal, RN, Brasil <br/>
-                    <b>Destino:</b> Buenos Aires, Argentina <br/>
-                    <b>Data de inicio e fim :</b> 20/11/2019 até 15/12/2019 <br/>
-                    <b>Orçamento previsto:</b> R$ 5.000,00 <br/>
-                </div>
-
-            </div>
-        </div>
+    <div class="col-sm-6 col-md-4" *ngFor="let viagem of listaViagens">
+        <app-card-viagem
+            [id]="viagem.id"
+            [objetivo]="viagem.objetivo"
+            [titulo]="viagem.titulo"
+            [status]="viagem.status"
+            [origem]="viagem.origem"
+            [destino]="viagem.destino"
+            [dataInicio]="viagem.dataInicio"
+            [dataFim]="viagem.dataFim"
+            [orcamentoPrevisto]="viagem.orcamentoPrevisto"
+            [resumo]="viagem.resumo"
+        ></app-card-viagem>
     </div>
 </div>
 <div bsModal #dangerModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"

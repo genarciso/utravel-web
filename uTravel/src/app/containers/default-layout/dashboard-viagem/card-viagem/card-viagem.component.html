@@ -1,0 +1,25 @@
+<div [ngClass]="'card ' + getStatusViagemBorder()">
+    <div class="card-header">
+        {{ titulo }}
+        <span class="badge badge-warning float-right">{{ status }}</span>
+        <button class="btn btn-default"><i class="icon-eye"></i></button>
+        <button class="btn btn-default" (click)="irParaEditar()"><i class="icon-pencil"></i></button>
+        <button
+            class="btn btn-default mr-1"
+            data-toggle="modal"
+            (click)="dangerModal.show()"
+        >
+            <i class="icon-trash"></i>
+        </button>
+    </div>
+    <div class="card-body">
+        <div class="card-body">
+            <b>Objetivo:</b> {{ objetivo }} <br />
+            <b>Origem:</b> {{ origem }} <br />
+            <b>Destino:</b> {{ destino }} <br />
+            <b>Data de inicio e fim :</b> {{ dataInicioFormatada }} até
+            {{ dataFimFormatada }} <br />
+            <b>Orçamento previsto:</b> {{ orcamentoPrevisto }} <br />
+        </div>
+    </div>
+</div>

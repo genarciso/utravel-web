@@ -20,7 +20,7 @@ export class ViagemService extends AbstractCrudService<Viagem> {
     }
 
     getUrlBase(): string {
-        return "viagem";
+        return "/viagem";
     }
 
     public enviar(viagemDTO: ViagemDTO): void {

@@ -24,6 +24,7 @@ import {HighchartsChartModule} from 'highcharts-angular';
 import {CoreModule} from './core/core.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HttpInterceptorService} from './core/http/http.interceptor.service';
+import { CardViagemComponent } from './containers/default-layout/dashboard-viagem/card-viagem/card-viagem.component';
 // import { FormLocomocaoComponent } from './containers/viagem/locomocao/form-locomocao/form-locomocao.component';
 
 const APP_CONTAINERS = [
@@ -58,6 +59,7 @@ const APP_CONTAINERS = [
     declarations: [
         AppComponent,
         ...APP_CONTAINERS,
+        CardViagemComponent,
         // FormLocomocaoComponent,
 
     ],
