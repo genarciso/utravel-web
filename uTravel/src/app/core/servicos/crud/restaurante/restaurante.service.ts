@@ -10,7 +10,7 @@ import { Restaurante } from "../../../modelos/dominio/restaurante.model";
 })
 export class RestauranteService extends AbstractCrudService<Restaurante> {
     private aoEnviarEvento: Subject<void> = new Subject();
-    
+
     constructor(protected httpService: HttpService) {
         super(httpService);
     }
@@ -23,7 +23,7 @@ export class RestauranteService extends AbstractCrudService<Restaurante> {
         return "restaurante";
     }
 
-    public enviar(restauranteDTO: RestauranteDTO, viagemId: number): void {
+    public enviar(restauranteDTO: RestauranteDTO, viagemId: string): void {
         restauranteDTO.restauranteDTO.empresaDTO.enderecoSede.endereco =
             restauranteDTO.restauranteDTO.enderecoDTO.endereco;
         const parametros = JSON.stringify(restauranteDTO);

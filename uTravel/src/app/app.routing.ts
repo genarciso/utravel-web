@@ -24,9 +24,8 @@ export const routes: Routes = [
         }
     },
     {
-        path: 'dashboard/viagem',
+        path: 'dashboard/viagem/:id',
         component: ViagemComponent,
-        loadChildren: () => import('./containers/viagem/viagem.module').then(m => m.ViagemModule)
     },
     { path: '**', component: DefaultLayoutComponent }
 ];
